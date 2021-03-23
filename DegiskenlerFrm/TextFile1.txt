@@ -1,0 +1,11 @@
+﻿ Soru 1 :Disaridan alinan iki sayının toplamiyla farkinin birbirine bolumunden kalanin sonucu kactir? (Farkın toplama bolumunden kalan kactir?)
+
+ Soru 2:Disaridan girilen bir sayının 10 eksiginin 20 fazlasinin 2ye bolumunden kalaninin karesi kactir?
+     
+Soru 3:Disaridan girilen iki sayının karelerinin toplami ile karelerinin farki toplami kactir?
+        
+Soru 4: Vize notu'nun % 30'u, final notu'nun % 70'ini alıp öğrencinin not ortalamasini cikartan bir uygulama yaziniz... DİKKAT => Notlar ondalikli olabilir?
+
+Soru 5:Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız ve  adi.soyadi@hotmail.com şeklinde mail adresi oluşturup kullanıcıya gösteriniz.
+
+Soru 6:Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini yapiniz

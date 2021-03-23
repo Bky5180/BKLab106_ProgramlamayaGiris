@@ -57,5 +57,8 @@ namespace DegiskenlerFrm
 
             //(sayi1 + sayi2).ToString();
         }
+
+      
+
     }
 }
