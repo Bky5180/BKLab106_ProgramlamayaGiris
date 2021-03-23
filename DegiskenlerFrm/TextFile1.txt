@@ -9,3 +9,5 @@ Soru 4: Vize notu'nun % 30'u, final notu'nun % 70'ini alıp öğrencinin not ort
 Soru 5:Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız ve  adi.soyadi@hotmail.com şeklinde mail adresi oluşturup kullanıcıya gösteriniz.
 
 Soru 6:Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini yapiniz
+
+Ercan : Deneme
