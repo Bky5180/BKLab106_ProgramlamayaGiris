@@ -11,4 +11,3 @@ Soru 5:Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız 
 Soru 6:Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini yapiniz
 
 Ercan : Deneme
-Burak
