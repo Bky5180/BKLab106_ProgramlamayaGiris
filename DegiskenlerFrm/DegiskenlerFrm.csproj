@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="TextFile1.txt" />
+    <Content Include="BurakOmer.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
