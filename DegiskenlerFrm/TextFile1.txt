@@ -13,3 +13,5 @@ Soru 6:Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini y
 Ercan : Deneme
 
 Fatih : Deneme
+
+Fatih : Deneme 2

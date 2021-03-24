@@ -1,0 +1,127 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BilgeAdamProje
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            //Disaridan alinan iki sayının toplamiyla farkinin birbirine
+            // bolumunden kalanin sonucu kactir? (Farkın toplama bolumunden kalan kactir?)
+
+            int s1, s2;
+
+            Console.Write("Birinci sayıyı giriniz :");
+            s1 = int.Parse(Console.ReadLine());
+            Console.Write("İkinci sayıyı giriniz :");
+            s2 = int.Parse(Console.ReadLine());
+
+            int toplam = s1 + s2;
+            int fark = s1 - s2;
+
+            int sonuc = toplam % fark;
+            Console.WriteLine("İşlem sonucu" + " " + sonuc);
+            Console.ReadLine();
+
+            */
+
+            /*
+              
+           // Disaridan girilen bir sayının 10 eksiginin 20
+           //fazlasinin 2ye bolumunden kalaninin karesi kactir ?
+
+           int s3;
+           Console.Write("Lütfen sayıyı giriniz :");
+           s3 = int.Parse(Console.ReadLine());
+
+           int sonuc1 = (s3 - 10 + 20) % 2;
+           int sonuc6 = sonuc1 * sonuc1;
+
+           Console.WriteLine("Sonuç :" + " " + sonuc6);
+           Console.ReadLine();
+
+           */
+
+
+            /*
+             // Disaridan girilen iki sayının karelerinin toplami ile karelerinin farki toplami kactir ?
+
+             int s4, s5;
+             Console.Write("Birinci sayıyı giriniz :");
+             s4 = int.Parse(Console.ReadLine());
+             Console.Write("İkinci sayıyı giriniz :");
+             s5 = int.Parse(Console.ReadLine());
+
+             int karetoplam = (s4*s4) + (s5*s5);
+             int karefark = (s4*s4) - (s5*s5);
+
+             int sonuc2 = karetoplam + karefark;
+             Console.WriteLine("Sonuç :" + " " + sonuc2);
+             Console.ReadLine();
+            */
+
+
+            /*
+
+            //Vize notu'nun% 30'u, final notu'nun % 70'ini alıp öğrencinin not
+            //ortalamasinicikartan bir uygulama yaziniz... DİKKAT => Notlar ondalikli olabilir?
+
+            float s6;
+            float s7;
+            Console.Write("Vize notunu giriniz :");
+            s6 = int.Parse(Console.ReadLine());
+            Console.Write("Final notunu giriniz :");
+            s7 = int.Parse(Console.ReadLine());
+
+            float vize = s6 * 30 / 100;
+            float final = s7 * 70 / 100;
+
+            float sonuc3 = vize + final;
+            Console.WriteLine("Not ortalamanız : " + " " + sonuc3);
+            Console.ReadLine();
+            */
+
+
+            /*
+
+            //Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız ve
+            // adi.soyadi @hotmail.com şeklinde mail adresi oluşturup kullanıcıya gösteriniz.
+
+            string ad, soyad;
+            Console.Write("Adınızı giriniz :");
+            ad = (Console.ReadLine());
+            Console.Write("Soyadınızı giriniz :");
+            soyad = (Console.ReadLine());
+
+            Console.WriteLine(ad + "." + soyad + "@hotmail.com");
+            Console.ReadLine();
+
+            */
+
+            /*
+
+            //Disaridan kenar uzunluklari girilen dikdortgenincevre ve alan hesabini yapiniza
+
+            int s8, s9;
+            Console.Write("Dikdörtgenin 1. kenarını giriniz :");
+            s8 = int.Parse(Console.ReadLine());
+            Console.Write("Dikdörtgenin 2. kenarını giriniz :");
+            s9 = int.Parse(Console.ReadLine());
+            int cevre = s8 + s9;
+            Console.WriteLine("Dikdörtgenin Çevresi =" + " "  + cevre + " " + "cm");
+
+            int alan = s8 * s9;
+            Console.WriteLine("Dikdörtgenin Alanı =" + " "+ alan + " "  + "m2");
+            Console.ReadLine();
+            */
+
+        }
+
+    }
+}
+
