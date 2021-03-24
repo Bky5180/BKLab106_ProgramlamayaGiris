@@ -1,0 +1,57 @@
+﻿float n1, n2;
+float result;
+
+// 1.
+Console.WriteLine("1. Enter two numbers: ");
+n1 = float.Parse(Console.ReadLine());
+n2 = float.Parse(Console.ReadLine());
+
+result = (n1 - n2) % (n1 + n2);
+Console.WriteLine($"Result: {result}");
+
+// 2.
+Console.WriteLine("2. Enter a number: ");
+n1 = float.Parse(Console.ReadLine());
+
+result = (n1 - 10 + 20) % 20;
+result *= result;
+Console.WriteLine($"Result: {result}");
+
+// 3.
+Console.WriteLine("3. Enter two numbers: ");
+n1 = float.Parse(Console.ReadLine());
+n2 = float.Parse(Console.ReadLine());
+
+float n1kare = n1 * n1;
+float n2kare = n2 * n2;
+
+result = n1kare + n2kare + n1kare - n2kare;
+Console.WriteLine($"Result: {result}");
+
+// 4.
+Console.WriteLine("4. Enter mid term note: ");
+n1 = float.Parse(Console.ReadLine());
+Console.WriteLine("Enter final note: ");
+n2 = float.Parse(Console.ReadLine());
+
+result = n1 * 0.3f + n2 * 0.7f;
+Console.WriteLine($"Student Note: {result}");
+
+// 5.
+string firstName, lastName;
+Console.WriteLine("5. Enter first name: ");
+firstName = Console.ReadLine();
+Console.WriteLine("Enter last name: ");
+lastName = Console.ReadLine();
+
+string email = $"{firstName}.{lastName}@hotmail.com";
+
+Console.WriteLine($"Your email address is: {email}");
+
+// 6.
+Console.WriteLine("6. Enter rectangle width: ");
+n1 = float.Parse(Console.ReadLine());
+Console.WriteLine("Enter rectangle length: ");
+n2 = float.Parse(Console.ReadLine());
+
+Console.WriteLine($"Rectangle Area: {n1 * n2}\nRectangle Perimeter: {n1 * 2 + n2 * 2}");

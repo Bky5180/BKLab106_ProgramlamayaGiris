@@ -1,0 +1,61 @@
+class Program
+    {
+        static int sayi1, sayi2;
+        static void Main(string[] args)
+        {
+            int toplam1, toplam2, fark, sonuc, cevre, alan;
+            double vize, final, ortalama;
+
+            #region Soru_1
+            /*Iterasyon();
+            toplam1 = sayi1 + sayi2;
+            fark = sayi1 - sayi2;
+            sonuc = toplam1 % fark;
+            Console.WriteLine($"{toplam1} % {fark} = {sonuc}");*/
+            #endregion
+
+            #region Soru_2
+            /*sayi1 = Convert.ToInt32(Console.ReadLine());
+            sonuc = (int)Math.Pow((sayi1 - 10 + 20) % 2, 2);
+            Console.WriteLine(sonuc);*/
+            #endregion
+
+            #region Soru_3
+            /*Iterasyon();
+            sayi1 = (int)Math.Pow(sayi1, 2);
+            sayi2 = (int)Math.Pow(sayi2, 2);
+            toplam1 = sayi1 + sayi2;
+            toplam2 = sayi1 - sayi2;
+            Console.WriteLine(toplam1 + toplam2);*/
+            #endregion
+
+            #region Soru_4
+            /*Iterasyon();
+            vize = sayi1 * 0.3;
+            final = sayi2 * 0.7;
+            ortalama = vize + final;
+            Console.WriteLine(ortalama);*/
+            #endregion
+
+            #region Soru_5
+            /*string ad, soyad;
+            ad = Console.ReadLine();
+            soyad = Console.ReadLine();
+            Console.WriteLine($"{ad}.{soyad}@hotmail.com");*/
+            #endregion
+
+            #region Soru_6
+            /*Iterasyon();
+            cevre = 2 * (sayi1 + sayi2);
+            alan = sayi1 * sayi2;
+            Console.WriteLine("Cevre: {0}\nAlan: {1}", cevre, alan);*/
+            #endregion
+
+            Console.ReadKey();
+        }
+        static void Iterasyon()
+        {
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            sayi2 = int.Parse(Console.ReadLine());
+        }
+    }
