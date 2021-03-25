@@ -90,15 +90,7 @@ namespace ifElse
             
         }
 
-        /*Disaridan siparis alinacak olan kitap miktari girilsin. 
-         * Sipari sayisi 20'den azsa toplam ucretten %5, 
-         *      20 - 50 araliginda ise %10, 
-         *      50-100 araligi ise %15, 
-         *      100'den fazla ise %25 indirim yapilsin. 
-         *      Kitabın birim fiyatı => 5 TLdir... 
-         *      Amac => Odenecek tutari kullaniciya gostermek...
-         * 
-         */
+       
         private void Form2_Load(object sender, EventArgs e)
         {
 
@@ -130,6 +122,44 @@ namespace ifElse
                 mesaj = "Bu ürün karşıki markette!";
             }
             MessageBox.Show(mesaj);
+        }
+
+        private void btnSatisIslemi_Click(object sender, EventArgs e)
+        {
+
+            /* Disaridan siparis alinacak olan kitap miktari girilsin. 
+            *  Sipari sayisi 20'den azsa toplam ucretten %5, 
+            *      20 - 50 araliginda ise %10, 
+            *      50-100 araligi ise %15, 
+            *      100'den fazla ise %25 indirim yapilsin. 
+            *      Kitabın birim fiyatı => 5 TLdir... 
+            *      Amac => Odenecek tutari kullaniciya gostermek...
+            * 
+            */
+
+            
+            double birimFiyat = 5;
+            double alinanSiparisMiktari = Convert.ToDouble(txtBirinciDeger.Text);
+            double toplamOdenecekTutar = 0;
+
+            if (alinanSiparisMiktari > 0 && alinanSiparisMiktari <= 20)
+            {
+                toplamOdenecekTutar = (birimFiyat * alinanSiparisMiktari) * 0.95;
+            }
+            else if (alinanSiparisMiktari >= 21 && alinanSiparisMiktari <= 50)
+            {
+                toplamOdenecekTutar = (birimFiyat * alinanSiparisMiktari) * 0.90;
+            }
+            else if (alinanSiparisMiktari >= 51 && alinanSiparisMiktari <= 100)
+            {
+                toplamOdenecekTutar = (birimFiyat * alinanSiparisMiktari) * 0.85;
+            }
+            else if (alinanSiparisMiktari > 100)
+            {
+                toplamOdenecekTutar = (birimFiyat * alinanSiparisMiktari) * 0.75;
+            }
+
+            MessageBox.Show("Ödemeniz gereken toplam tutar: " + toplamOdenecekTutar + " TL");
         }
     }
 }
