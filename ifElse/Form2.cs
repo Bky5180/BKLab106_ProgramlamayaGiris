@@ -12,6 +12,18 @@ namespace ifElse
 {
     public partial class Form2 : Form
     {
+        /*
+          * MANTIKSAL OPERATORLER
+          * Birden fazla durumun ayni anda kontrol edilmesi senaryosunda kullanilan operatorlerdir...
+          * && (VE) (Kontrol blogu icerisinde yer alan tum kosullarin saglanmasi durumuna isaret eder... Kosullardan biri dahi saglanmazsa blogunuz harekete gecmez...)
+          * || (VEYA) (Kontrol blogu icerisinde yer alan kosullardan herhangi birinin saglanmasi durumuna isaret eder... Boylece bir kosul bile saglansa blogunuza yazdiginiz kodlar harekete gecer...) Kısayol => ALTGR + Tire
+          * 
+          * Yukarıdaki operatorlere "kısa devre operatoru (shortcut operator)" adi verilir.. Kosullari kontrole en soldan baslar, herhangi bir uygunsuzluk durumunda diger kosullara asla bakmaz!.. Asagidaki operatorlerde ise, kosullar uysun ya da uymasin hepsi kontrol edilir...
+          * 
+          * & => VE
+          * | => VEYA
+          */
+
         public Form2()
         {
             InitializeComponent();
@@ -78,11 +90,15 @@ namespace ifElse
             
         }
 
-        //Disaridan urun adi girilecek, kasiyer bize urunun hangi reyonda oldugunu soyleyecek...
-        //Domates, Biber, Patlican => Sebze Reyonu
-        //Diş Macunu, Parfüm, Şampuan => Kozmetik Reyonu
-        //Cep Telefonu, Bilgisayar, Ses Sistemi => Teknoloji Reyonu
-        //Başka bir ürün girilirse "Bu ürün bizde yok!" uyarisi verilsin!
+        /*Disaridan siparis alinacak olan kitap miktari girilsin. 
+         * Sipari sayisi 20'den azsa toplam ucretten %5, 
+         *      20 - 50 araliginda ise %10, 
+         *      50-100 araligi ise %15, 
+         *      100'den fazla ise %25 indirim yapilsin. 
+         *      Kitabın birim fiyatı => 5 TLdir... 
+         *      Amac => Odenecek tutari kullaniciya gostermek...
+         * 
+         */
         private void Form2_Load(object sender, EventArgs e)
         {
 
