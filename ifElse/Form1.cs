@@ -83,6 +83,29 @@ namespace ifElse
         private void btnDegerKontrolu_Click(object sender, EventArgs e)
         {
             // Girilen ifade'ye gore mobile olup olmadigina bakalim
+            string gelenDeger = txtGirisAlani.Text;
+            // Olasiliklar :        5321233322 ,
+            //  05422221111,
+            //  905353223322 ,          
+            //  +905459998877 ,
+            //  02123334455,
+            //  08507770000,
+            //  4440333
+            // 53,54,55,50
+            // string temp = gelenDeger.Substring(gelenDeger.Length -, 10);
+            // string alankod = temp.PadLeft(3); // 5 ise gsm numarasidir .
+            
+
+            //MessageBox.Show($"Alinan {gelenDeger} , AlanKodu:{alankod} ");
+
+            //if (alankod.PadLeft(1) == "5")
+            //{
+            //    MessageBox.Show("Gsm Operatorudur");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Gelen Numara:"+gelenDeger);
+            //}
 
         }
     }
