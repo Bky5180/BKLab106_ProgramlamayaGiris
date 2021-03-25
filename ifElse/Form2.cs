@@ -161,17 +161,7 @@ namespace ifElse
 
             MessageBox.Show("Ödemeniz gereken toplam tutar: " + toplamOdenecekTutar + " TL");
         }
-       /* Formun ilk acilis aninda 8 haneli rastgele bir sayı lblRastgeleKarakterler 
-        * adli label'a yazdirilacak ve kullanicidan butona bastigi anda 
-        * textbox'taki yazıyla label'daki yazının karsilastirmasi yapilacak. 
-        * 
-        * Eger karsilastirma olumsuz ise lblKalanHakkimiz'deki deger bir azaltılacak. 
-         
-        Eger kullanici 5 defa hatali giris yaparsa button'un aktiflik ozelligi kapatilacak...
-        
-        Her hatali giriste yeni bir rastgele sayi turetilmelidir...
-       */
-
+       
 
     }
 }

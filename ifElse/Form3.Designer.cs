@@ -64,6 +64,7 @@
             this.btnGirisYap.TabIndex = 15;
             this.btnGirisYap.Text = "GİRİŞ YAP";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // txtMetinGirisAlani
             // 
@@ -104,6 +105,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
