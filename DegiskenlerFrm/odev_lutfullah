@@ -1,0 +1,139 @@
+using System;
+
+namespace ödev_1
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+
+            #region.soru1 
+            //1. soru: Disaridan alinan iki sayinin toplamiyla
+            //farkinin birbirne bölümünden kalan kactir?
+
+            Console.WriteLine("1. soru: Disaridan alinan iki sayinin toplamiyla farkinin birbirne bölümünden kalan kactir?\n\n");
+
+            int s1, s2, sonuc1, fark, toplam;
+
+
+            Console.WriteLine("Birinci sayıyı giriniz.");
+            s1= int.Parse(Console.ReadLine());
+            Console.WriteLine("İkinci sayıyı giriniz.");
+            s2 = int.Parse(Console.ReadLine());
+
+            toplam = s1 + s2;
+            fark = s1 - s2;
+            sonuc1 = toplam % fark;
+
+            Console.WriteLine("birinci sayi ile ikinci sayinin farkı ve \ntoplamlarının birbirine bölümünden kalan\n=" + sonuc1);
+            Console.WriteLine("\nsonraki soruya geçmek için bir tuşa basınız.");
+            Console.ReadLine();
+            #endregion
+
+            #region.soru2
+            // 2. soru: Disaridan girilen bir sayının 10 eksiginin 20
+            //fazlasinin 2ye bolumunden kalaninin karesi kactir ?
+
+
+            Console.WriteLine("2. soru: Bir sayının 10 eksiğinin 20 fazlasının 2ye bölümünden kalanın karesi kaçtır?\n\n");
+            int sayi3, sonuc2;
+
+
+            Console.WriteLine("Bir sayı giriniz.");
+            sayi3 = int.Parse(Console.ReadLine());
+
+            sonuc2 = (sayi3 - 10 + 20) % 2;
+            Console.WriteLine("Girilen sayının 10 eksiğinin 20 fazlasının 2ye bölümünden kalanın karesi \n= " + sonuc2 * sonuc2);
+            Console.WriteLine("\nsonraki soruya geçmek için bir tuşa basınız.");
+            Console.ReadLine();
+            #endregion
+
+            #region.soru3
+
+            //3. Soru: Disaridan girilen iki sayının karelerinin
+            //toplami ile karelerinin farki toplami kactir ?
+
+            int sayi4, sayi5, kareleritoplami, karelerifarki, sonuc3;
+
+            Console.WriteLine("3. Soru: İki sayının kareleri toplamı ile kareleri farkının toplamı kaçtır ?\n");
+            Console.WriteLine("İki sayı giriniz..\nBirinci sayı: ");
+            sayi4 = int.Parse(Console.ReadLine());
+            Console.WriteLine("İkinci sayı:");
+            sayi5 = int.Parse(Console.ReadLine());
+
+            kareleritoplami = sayi4 * sayi4 + sayi5 * sayi5;
+            karelerifarki = Math.Abs(sayi4 * sayi4 - sayi5 * sayi5);
+
+            sonuc3 = karelerifarki + kareleritoplami;
+            Console.WriteLine("Girilen iki sayının karelerinin \ntoplami ile karelerinin farki toplami \n=" + sonuc3);
+            Console.WriteLine("\nsonraki soruya geçmek için bir tuşa basınız.");
+            Console.ReadLine();
+            #endregion
+
+            #region.soru4
+            //4. soru: Vize notu'nun% 30'u, final notu'nun % 70'ini alıp öğrencinin not
+            //ortalamasinicikartan bir uygulama yaziniz... DİKKAT => Notlar ondalikli olabilir?
+
+
+            float vize, final, ortalama;
+
+            Console.WriteLine("4. soru: Vize notu'nun% 30'u, final notu'nun % 70'ini baz alıp öğrencinin not \nortalamasini cikartan bir uygulama yaziniz... DİKKAT => Notlar ondalikli olabilir?");
+            Console.WriteLine("\nVize Notunuzu Giriniz. ");
+            vize = float.Parse(Console.ReadLine());
+            Console.WriteLine("Final Notunuzu Giriniz. ");
+            final = float.Parse(Console.ReadLine());
+
+            ortalama = (float)((vize * 0.3) + (final * 0.3));
+
+            Console.WriteLine("Not Ortalamanız : " + ortalama);
+            Console.WriteLine("\nsonraki soruya geçmek için bir tuşa basınız.");
+            Console.ReadLine();
+            #endregion
+
+            #region.soru5
+            //5. Soru: Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız ve
+            // adi.soyadi @hotmail.com şeklinde mail adresi oluşturup kullanıcıya gösteriniz.
+
+            string Adi, Soyadi, mail;
+
+            Console.WriteLine("\n5. Soru: Dışarıdan kullanıcı adını ve soyadını ayrı ayrı olarak alnız ve\nadi.soyadi @hotmail.com şeklinde mail adresi oluşturup kullanıcıya gösteriniz.");
+            Console.WriteLine("\nAdınızı Giriniz. ");
+            Adi = Console.ReadLine();
+
+            Console.WriteLine("Soyadınızı Giriniz. ");
+            Soyadi = Console.ReadLine();
+
+            mail =(Adi + "." + Soyadi + "@hotmail.com");
+
+            Console.WriteLine("Mail adresiniz : " + mail);
+            Console.WriteLine("\nSonraki soruya geçmek için bir tuşa basınız.");
+            Console.ReadLine();
+
+            #endregion
+
+            #region.soru6
+            //6. Soru: Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini yapiniz.
+
+            float kisakenar, uzunkenar, cevre, alan;
+
+            Console.WriteLine("6. Soru: Disaridan kenar uzunluklari girilen dikdortgenin cevre ve alan hesabini yapiniz.\n");
+            Console.WriteLine("Kısa kenar uzunluğunu giriniz.");
+            kisakenar = float.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Uzun kenar uzunluğunu giriniz.");
+            uzunkenar = float.Parse(Console.ReadLine());
+
+            cevre = 2 * (kisakenar + uzunkenar);
+            alan = kisakenar * uzunkenar;
+
+            Console.WriteLine("\nDikdörtgenin cevresi : " + cevre+ "\n");
+
+            Console.WriteLine("Dikdörtgenin alanı : " + alan+ "\n");
+
+            Console.WriteLine("\nTerminalden çıkmak için bir tuşa basınız.");
+            Console.ReadLine();
+            #endregion
+        }
+    }
+}
