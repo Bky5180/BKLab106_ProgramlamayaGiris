@@ -1,3 +1,5 @@
+//References kısmına using System.Threading ifadesi eklenmeli !!!
+
 private void Form3_Load(object sender, EventArgs e)
         {
             #region soruAciklamasi
