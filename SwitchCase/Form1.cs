@@ -105,5 +105,18 @@ namespace SwitchCase
 
             MessageBox.Show(mesaj);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // birinci textbox kullanici adi olsun
+            // ikinci giris alaninda ise sifre istensin
+            // kullanici adi :"bilgeadam" , sifre :"1234"
+
+            //Eger hem kullanici adi hemde sifre dogru girildiyse "Tebrikler giris Basarili" yazsin, 
+            // Eger kullanici adi dogru sifre yazlis ise "Kullanici adi dogru ancak sifre hatali" mesajını versin
+            // Eger sifre dogru kullanici adi yazliş ise "Kullanici Adini yanşliş girdiniz" mesajı versin
+
+
+        }
     }
 }
