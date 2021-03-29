@@ -71,7 +71,7 @@ namespace SwitchCase
                     break;
                 default: // Ongorulen bir durum harici degerler ile karsilasilirsa ,varsayilan olarak karar yapisi ne gibi bir islem uygulansin. Tamamen opsiyoneldir. Kullanmasak da olur
                     mesaj = "Boyle bir mevsim hiz duymadim !!";
-                break;
+                    break;
             }
 
             #endregion
@@ -116,7 +116,65 @@ namespace SwitchCase
             // Eger kullanici adi dogru sifre yazlis ise "Kullanici adi dogru ancak sifre hatali" mesajını versin
             // Eger sifre dogru kullanici adi yazliş ise "Kullanici Adini yanşliş girdiniz" mesajı versin
 
+            string kullaniciAdi = txtGiris.Text.ToLower();
+            string sifre = txtIkinciGiris.Text;
+            string mesaj = "";
 
+            switch (kullaniciAdi)
+            {
+                case "bilgeadam":
+                    switch (sifre)
+                    {
+                        case "1234":
+                            mesaj = "Tebrikler giriş başarılı";
+                            break;
+                        default:
+                            mesaj = "Kullanıcı adı doğru ancak şifre hatalı";
+                            break;
+                    }
+                    break;
+                default:
+                    switch (sifre)
+                    {
+                        case "1234":
+                            mesaj = "Şifre doğru ancak kullanıcı adını yanlış girdiniz";
+                            break;
+                        default:
+                            mesaj = "Hem kullanıcı adı hem şifreyi yanlış girdiniz";
+                            break;
+                    }
+                    break;
+            }
+            MessageBox.Show(mesaj);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            int date = DateTime.Now.Year;
+            for (int i = 1945; i <= date; i++)
+            {
+                if (i == 1995 || i == 2020)
+                    continue;
+
+                listBox1.Items.Add(i);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int tekToplam = 0, ciftToplam = 0, fark = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                if (i % 2 == 0)
+                    ciftToplam += i;
+
+                else
+                    tekToplam += i;
+            }
+            fark = ciftToplam - tekToplam;
+            MessageBox.Show(Math.Pow(fark, 2).ToString());
         }
     }
 }
