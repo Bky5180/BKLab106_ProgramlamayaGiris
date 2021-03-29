@@ -22,9 +22,9 @@ namespace HourseRacing
         {
             //Bir kontrolun "Left" property'si, o kontrolun sola olan uzakligini size teslim eder...
             //Bir kontrolun Left ve Top ozelliklerine atama yapabilirsiniz ancak Right ve Bottom ozelliklerinden yalnizca o anki degerlerini alabilirsiniz...
-            pcbBirinciAt.Left += rnd.Next(5, 16);
-            pcbIkinciAt.Left += rnd.Next(5, 16);
-            pcbUcuncuAt.Left += rnd.Next(5, 16);
+            pcbBirinciAt.Left += rnd.Next(5, 30);
+            pcbIkinciAt.Left += rnd.Next(5, 30);
+            pcbUcuncuAt.Left += rnd.Next(5, 30);
 
 
             if (pcbBirinciAt.Left > pcbIkinciAt.Left && pcbBirinciAt.Left > pcbUcuncuAt.Left)
@@ -75,6 +75,25 @@ namespace HourseRacing
             {
                 timer1.Start();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            pcbBirinciAt.Left = 0;
+            pcbIkinciAt.Left = 0;
+            pcbUcuncuAt.Left = 0;
+            lblBilgilendirme.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pcbBirinciAt.Left += rnd.Next(10, 50); 
+        }
+
+        private void panel1_MouseEnter(object sender, EventArgs e)
+        {
+            pcbIkinciAt.Left += 30;
         }
     }
 }

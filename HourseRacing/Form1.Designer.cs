@@ -39,6 +39,7 @@
             this.pcbIkinciAt = new System.Windows.Forms.PictureBox();
             this.pcbUcuncuAt = new System.Windows.Forms.PictureBox();
             this.lblBilgilendirme = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBirinciAt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbIkinciAt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUcuncuAt)).BeginInit();
@@ -54,7 +55,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkGreen;
             this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(455, 31);
+            this.button1.Location = new System.Drawing.Point(536, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 43);
             this.button1.TabIndex = 0;
@@ -67,12 +68,13 @@
             this.button2.BackColor = System.Drawing.Color.DarkGreen;
             this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(633, 31);
+            this.button2.Location = new System.Drawing.Point(714, 31);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 43);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Yarisi Bitir";
+            this.button2.Text = "Yarisi Sifirla";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblFinishCizgisi
             // 
@@ -138,12 +140,21 @@
             this.lblBilgilendirme.Size = new System.Drawing.Size(0, 26);
             this.lblBilgilendirme.TabIndex = 22;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(431, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(99, 43);
+            this.panel1.TabIndex = 23;
+            this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(966, 537);
+            this.ClientSize = new System.Drawing.Size(991, 537);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBilgilendirme);
             this.Controls.Add(this.pcbUcuncuAt);
             this.Controls.Add(this.pcbIkinciAt);
@@ -176,6 +187,7 @@
         private System.Windows.Forms.PictureBox pcbIkinciAt;
         private System.Windows.Forms.PictureBox pcbUcuncuAt;
         private System.Windows.Forms.Label lblBilgilendirme;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
