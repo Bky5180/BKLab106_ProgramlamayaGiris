@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ifElse", "ifElse\ifElse.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorseRacing", "HourseRacing\HorseRacing.csproj", "{1D6A579D-58BF-4E2A-85BD-2939FC426AFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ternary", "Ternary\Ternary.csproj", "{4BC9E5CD-C1B5-4B9F-B114-A5BF15B6F68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchCase", "SwitchCase\SwitchCase.csproj", "{A59013BF-656B-4CB3-BD73-FC342847CDF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{1D6A579D-58BF-4E2A-85BD-2939FC426AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D6A579D-58BF-4E2A-85BD-2939FC426AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D6A579D-58BF-4E2A-85BD-2939FC426AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC9E5CD-C1B5-4B9F-B114-A5BF15B6F68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC9E5CD-C1B5-4B9F-B114-A5BF15B6F68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC9E5CD-C1B5-4B9F-B114-A5BF15B6F68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC9E5CD-C1B5-4B9F-B114-A5BF15B6F68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59013BF-656B-4CB3-BD73-FC342847CDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59013BF-656B-4CB3-BD73-FC342847CDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59013BF-656B-4CB3-BD73-FC342847CDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59013BF-656B-4CB3-BD73-FC342847CDF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

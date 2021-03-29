@@ -32,13 +32,14 @@ namespace ifElse
                 }
                 else
                 {
-                    deger = rnd.Next(99999);
+                    
                 }
               
             }
             else
             {
-                 
+                deger = deger + 1;
+                listBox1.Items.Add(deger);
             }
 
             
