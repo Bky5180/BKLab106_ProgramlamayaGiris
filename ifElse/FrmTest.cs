@@ -14,35 +14,50 @@ namespace ifElse
     {
 
         Random rnd = new Random();
-        int toplamTiklama = 0, uretilenSayiAdedi = 0, toplam;
+        int toplamTiklama = 0, uretilenSayiAdedi = 0, toplam = 0;
         public FrmTest()
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            toplamTiklama++;
+            lblToplamTiklama.Text = toplamTiklama.ToString();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            toplamTiklama += 1;
-            lblToplamTiklama.Text = toplamTiklama.ToString();
-
             int deger = rnd.Next(1000, 10000);
             if (checkBox1.Checked)
             {
                 if ((deger % 2) == 0)
                     listBox1.Items.Add(deger);
+                else
+                {
+                    deger--;
+                    listBox1.Items.Add(deger);
+                }
             }
             else
             {
                 if ((deger % 2) == 1)
                     listBox1.Items.Add(deger);
+                else
+                {
+                    deger--;
+                    listBox1.Items.Add(deger);
+                }
             }
-            uretilenSayiAdedi = listBox1.Items.Count;
+            ++uretilenSayiAdedi;
             lblUretilenSayiAdedi.Text = uretilenSayiAdedi.ToString();
 
-            toplam = 0;
-            for (int i = 0; i < uretilenSayiAdedi; i++)
-            {
-                toplam += (int)listBox1.Items[i];
-            }
+            toplam += deger;
             lblToplam.Text = toplam.ToString();
         }
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +69,7 @@ namespace ifElse
 
             toplamTiklama = 0;
             uretilenSayiAdedi = 0;
+            toplam = 0;
         }
     }
 }

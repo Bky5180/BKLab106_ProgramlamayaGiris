@@ -37,12 +37,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblToplam = new System.Windows.Forms.Label();
+            this.lblUretilenSayiAdedi = new System.Windows.Forms.Label();
+            this.lblToplamTiklama = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblToplamTiklama = new System.Windows.Forms.Label();
-            this.lblUretilenSayiAdedi = new System.Windows.Forms.Label();
-            this.lblToplam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,19 +52,21 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(75, 76);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(78, 21);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Tek Cift";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(75, 144);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(228, 260);
             this.listBox1.TabIndex = 1;
@@ -77,7 +79,7 @@
             0,
             0});
             this.numericUpDown1.Location = new System.Drawing.Point(432, 75);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(160, 22);
             this.numericUpDown1.TabIndex = 2;
@@ -110,7 +112,7 @@
             0,
             0});
             this.numericUpDown2.Location = new System.Drawing.Point(629, 75);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             101,
             0,
@@ -133,7 +135,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(167, 76);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 8;
@@ -144,7 +146,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(275, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 9;
@@ -161,10 +163,34 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(336, 144);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(329, 247);
             this.panel1.TabIndex = 10;
+            // 
+            // lblToplam
+            // 
+            this.lblToplam.AutoSize = true;
+            this.lblToplam.Location = new System.Drawing.Point(162, 98);
+            this.lblToplam.Name = "lblToplam";
+            this.lblToplam.Size = new System.Drawing.Size(0, 17);
+            this.lblToplam.TabIndex = 3;
+            // 
+            // lblUretilenSayiAdedi
+            // 
+            this.lblUretilenSayiAdedi.AutoSize = true;
+            this.lblUretilenSayiAdedi.Location = new System.Drawing.Point(162, 60);
+            this.lblUretilenSayiAdedi.Name = "lblUretilenSayiAdedi";
+            this.lblUretilenSayiAdedi.Size = new System.Drawing.Size(0, 17);
+            this.lblUretilenSayiAdedi.TabIndex = 3;
+            // 
+            // lblToplamTiklama
+            // 
+            this.lblToplamTiklama.AutoSize = true;
+            this.lblToplamTiklama.Location = new System.Drawing.Point(162, 20);
+            this.lblToplamTiklama.Name = "lblToplamTiklama";
+            this.lblToplamTiklama.Size = new System.Drawing.Size(0, 17);
+            this.lblToplamTiklama.TabIndex = 3;
             // 
             // label5
             // 
@@ -196,30 +222,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Toplam Tiklama";
             // 
-            // lblToplamTiklama
-            // 
-            this.lblToplamTiklama.AutoSize = true;
-            this.lblToplamTiklama.Location = new System.Drawing.Point(162, 20);
-            this.lblToplamTiklama.Name = "lblToplamTiklama";
-            this.lblToplamTiklama.Size = new System.Drawing.Size(0, 21);
-            this.lblToplamTiklama.TabIndex = 3;
-            // 
-            // lblUretilenSayiAdedi
-            // 
-            this.lblUretilenSayiAdedi.AutoSize = true;
-            this.lblUretilenSayiAdedi.Location = new System.Drawing.Point(162, 60);
-            this.lblUretilenSayiAdedi.Name = "lblUretilenSayiAdedi";
-            this.lblUretilenSayiAdedi.Size = new System.Drawing.Size(0, 21);
-            this.lblUretilenSayiAdedi.TabIndex = 3;
-            // 
-            // lblToplam
-            // 
-            this.lblToplam.AutoSize = true;
-            this.lblToplam.Location = new System.Drawing.Point(162, 98);
-            this.lblToplam.Name = "lblToplam";
-            this.lblToplam.Size = new System.Drawing.Size(0, 21);
-            this.lblToplam.TabIndex = 3;
-            // 
             // FrmTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -234,7 +236,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.checkBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmTest";
             this.Text = "FrmTest";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
