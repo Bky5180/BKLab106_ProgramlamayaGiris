@@ -14,6 +14,7 @@ namespace ifElse
     {
 
         Random rnd = new Random();
+        int toplmatiklama, uretilenSayiAdedi, toplam;
         public FrmTest()
         {
             InitializeComponent();
