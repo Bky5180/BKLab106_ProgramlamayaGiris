@@ -116,7 +116,39 @@ namespace SwitchCase
             // Eger kullanici adi dogru sifre yazlis ise "Kullanici adi dogru ancak sifre hatali" mesajını versin
             // Eger sifre dogru kullanici adi yazliş ise "Kullanici Adini yanşliş girdiniz" mesajı versin
 
+            string kullaniciAdi = txtGiris.Text.ToLower();
+            string sifre = txtIkinciGiris.Text;
+            string mesaj = "";
 
+            switch (kullaniciAdi)
+            {
+                case "bilgeadam":
+                    switch (sifre)
+                    {
+                        case "1234":
+                            mesaj = "Tebrikler Giris basarili";
+                            break;
+
+                        default:
+                            mesaj = "Kullanici adi dogru ancak sifre hatali";
+                            break;
+                    }
+                    break;
+                default:
+                    switch (sifre)
+                    {
+                        case "1234":
+                            mesaj = "Kullanici Adi yanliş.Sifreyi tutturdun";
+                            break;
+
+                        default:
+                            mesaj = "Kullanici adi yanliş sifrede hatali";
+                            break;
+                    }
+                    //mesaj = "Kullanici Adiniz Yanlis . Sifreye bakmadim bile";
+                    break;
+            }
+            MessageBox.Show(mesaj);
         }
     }
 }
