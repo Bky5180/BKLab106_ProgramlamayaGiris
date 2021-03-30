@@ -58,14 +58,32 @@ namespace Diziler
             int[] sayilar2 = { 9, 5, 6, 7, 3 };
 
             // Eleman okuma yontemi : index ile olur 
-            Console.WriteLine(sayilar[3]); // 4 Yazacaktir.
-
+            //Console.WriteLine(sayilar[3]); // 4 Yazacaktir.
+            //Cevap1();
             // Ekrandan alinacak 10 adet sayinin karesini ve kupunu ekrana bastirin
             // Ciktisi ...
             // Sayi   Karesi    Kup
             // ----   ------    ----
             //  4       16      64
             //  2       4       8
+
+            //CarpimTaplosu();
+
+            // Soru 2 : Carpim tapolusunu ekrana bastirin
+            //  1 x 1 = 1
+            //  1 x 2 = 2
+
+
+            // Soru 3: Klavyeden girilen sayini faktoryelini hesaplayin
+
+            Faktoryel();
+
+            Console.ReadLine();
+        }
+
+        public static void Cevap1()
+        {
+
 
             int[] dizi1 = new int[10];
 
@@ -77,14 +95,15 @@ namespace Diziler
             Console.WriteLine("Sayi\tKaresi\tKup");
             for (int i = 0; i < dizi1.Length; i++)
             {
-                Console.WriteLine($"{dizi1[i]}\t{dizi1[i]*dizi1[i]}\t{dizi1[i] * dizi1[i]* dizi1[i]}");    
+                Console.WriteLine($"{dizi1[i]}\t{dizi1[i] * dizi1[i]}\t{dizi1[i] * dizi1[i] * dizi1[i]}");
             }
 
-            // Soru 2 : Carpim tapolusunu ekrana bastirin
-            //  1 x 1 = 1
-            //  1 x 2 = 2
+        }
+        public static void CarpimTaplosu()
+        {
+            //Ceren Sahin Cozumu
 
-            for(int j = 1; j <= 10; j++)
+            for (int j = 1; j <= 10; j++)
             {
                 for (int i = 1; i <= 10; i++)
                 {
@@ -92,11 +111,20 @@ namespace Diziler
                 }
                 Console.WriteLine();
             }
-            // Soru 3: Klavyeden girilen sayini faktoryelini hesaplayin
 
-
-            Console.ReadLine();
         }
+        public static void Faktoryel()
+        {
+            // Teoman Yanmaz Cozumu
 
+            ulong faktoriyel = 1;
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = sayi; i > 0; i--)
+            {
+                faktoriyel = (ulong)i * faktoriyel;
+            }
+            Console.WriteLine(faktoriyel);
+        }
     }
 }
