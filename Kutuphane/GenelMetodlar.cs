@@ -3,29 +3,21 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Kutuphane
-{
-
-    /*
+{    /*
      Odev : Bir cift Tavsanimiz var . Bu tavsanlar yavrudur.
             Yavru tavsanlar bir ay icerisinde ergenlige ulasmaktadir.
             Ergenlesen her cift tavsan bir ay sonra bir cift tavsan dogurmaktadir.
             Bu matematige gore de tavsanlar ölümsüzdür.
-            100 ay  sonra kac tavsanim olur ?
-     
+            100 ay  sonra kac tavsanim olur ?     
      */
-    /*
-     
-     Odev : Ekrandan alinacak 3 adet sayiyi kucukten buyuge dogru siralayin
-     
+    /*     
+     Odev : Ekrandan alinacak 3 adet sayiyi kucukten buyuge dogru siralayin     
      */
-
-    /*
-     
+    /*     
      8 veziri satranc tahtasina birbirini yemeyecek sekilde diziniz.
-    Programini yapmayin. Sadece tahtada calisin
+     Programini yapmayin. Sadece tahtada calisin
      */
-
-    public static class GenelStaticMetodlar
+    /*public static class GenelStaticMetodlar
     {
         public static void CarpimTaplosu()
         {
@@ -39,7 +31,6 @@ namespace Kutuphane
                 }
                 Console.WriteLine();
             }
-
         }
         public static void Faktoryel(int sayi)
         {
@@ -71,32 +62,21 @@ namespace Kutuphane
                     }
                     Console.WriteLine("Lutfen Sayi Giriniz...");
                 } while (true);
-                
-                
-                
-
-
             }
             catch (Exception)
             {
-
                 throw;
             }
-            
-
             return sayi;
-        
         }
-    }
+    }*/
 
-    public class GenelMetodlar
+    /*public class GenelMetodlar
     {
-
-
         /// <summary>
         /// Carpim tablosunu Console da gosterir
         /// </summary>
-        public  void CarpimTaplosu()
+        public void CarpimTaplosu()
         {
             //Ceren Sahin Cozumu
 
@@ -108,12 +88,7 @@ namespace Kutuphane
                 }
                 Console.WriteLine();
             }
-
         }
-
-
-
-
 
         /// <summary>
         /// Verilen sayinin faktoryelini  hesaplar
@@ -134,7 +109,7 @@ namespace Kutuphane
             //Console.WriteLine(faktoriyel);
             return faktoriyel;
         }
-        public  int EkrandanSayiOku()
+        public int EkrandanSayiOku()
         {
             int sayi = 0;
             string str = "";
@@ -151,21 +126,14 @@ namespace Kutuphane
                     }
                     Console.WriteLine("Lutfen Sayi Giriniz...");
                 } while (true);
-
-
-
-
-
             }
             catch (Exception)
             {
-
                 throw;
             }
-
-
             return sayi;
-
         }
-    }
+    }*/
+
+
 }

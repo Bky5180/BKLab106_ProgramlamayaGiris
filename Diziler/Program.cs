@@ -76,21 +76,20 @@ namespace Diziler
 
             // Soru 3: Klavyeden girilen sayini faktoryelini hesaplayin
             //ForeachEkrandanOkuyamama();
-            //Faktoryel();
+            //Faktoryel(7);
 
             #region Kutuphane Kullanimi
-            GenelMetodlar metodlar = new GenelMetodlar();
+            //GenelMetodlar metodlar = new GenelMetodlar();
 
-            int sayi = metodlar.EkrandanSayiOku();
+            //int sayi = metodlar.EkrandanSayiOku();
 
-            metodlar.Faktoryel(sayi);
+            //Console.WriteLine(metodlar.Faktoryel(sayi));
 
             #endregion
 
-
             #region Static Kutuphane Kullanimi
 
-            metodlar.CarpimTaplosu();
+            //metodlar.CarpimTaplosu();
 
             #endregion
             //SonsuzDongu();
@@ -111,14 +110,14 @@ namespace Diziler
                 }
 
             } while (true);
-            
+
         }
         public static void ForeachEkrandanOkuyamama()
         {
-            int[] sayilar = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10};
+            int[] sayilar = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             foreach (var item in sayilar)
             {
-                
+
                 Console.WriteLine(item); //= int.Parse(Console.ReadLine());
             }
 
@@ -131,8 +130,6 @@ namespace Diziler
         }
         public static void Cevap1()
         {
-
-
             int[] dizi1 = new int[10];
 
             for (int i = 0; i < dizi1.Length; i++)
@@ -145,7 +142,6 @@ namespace Diziler
             {
                 Console.WriteLine($"{dizi1[i]}\t{dizi1[i] * dizi1[i]}\t{dizi1[i] * dizi1[i] * dizi1[i]}");
             }
-
         }
         public static void CarpimTaplosu()
         {
