@@ -42,7 +42,10 @@ namespace Loop_For
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int[]  yas = new int[12];
 
+            
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

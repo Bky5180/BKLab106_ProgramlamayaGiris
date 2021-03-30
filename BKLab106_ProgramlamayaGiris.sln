@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchCase", "SwitchCase\Sw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loop_For", "Loop_For\Loop_For.csproj", "{7F9858FC-24D7-4BC4-8449-ACA2D0634192}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{EA548F3C-F648-4A11-A093-229ED58F2528}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7F9858FC-24D7-4BC4-8449-ACA2D0634192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F9858FC-24D7-4BC4-8449-ACA2D0634192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F9858FC-24D7-4BC4-8449-ACA2D0634192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA548F3C-F648-4A11-A093-229ED58F2528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA548F3C-F648-4A11-A093-229ED58F2528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA548F3C-F648-4A11-A093-229ED58F2528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA548F3C-F648-4A11-A093-229ED58F2528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
