@@ -26,7 +26,10 @@ namespace Loop_For
             // Kosul eger uygun degilse donguden cikar
 
             // for(balangicDegeri;BitişKosulu;ArtisMiktari
-            for (int deger = 0; deger < 1000; deger+=5)
+
+            listBox1.Items.Clear();
+
+            for (int deger = 1; deger <= 1000; deger++)
             {
                 listBox1.Items.Add(deger);
             }
@@ -58,26 +61,26 @@ namespace Loop_For
         {
             // 1-100 arasindaki cift sayilarin toplami ile tek sayilarin toplaminin farklarinin karesi kactir?
             // camel case 
-            int ciftToplam =0, tekToplam=0;
-            
+            int ciftToplam = 0, tekToplam = 0;
+
             // Pascal case
-            int fark=0, TekKare;
+            int fark = 0, TekKare;
 
             // snack case 
-            int cift_Toplam_sayilar; 
+            int cift_Toplam_sayilar;
             int tek_Toplam_;
 
             for (int i = 1; i <= 100; i++)
             {
 
-                // eger Tel satirlik komut varsa scope acmaya gerek yoktur
+                // eger Tek satirlik komut varsa scope acmaya gerek yoktur
                 if (i % 2 == 0)
                     ciftToplam += i;
                 else
                     tekToplam += i;
             }
-            fark = (ciftToplam - tekToplam) * (ciftToplam - tekToplam);
-            MessageBox.Show((fark).ToString());
+            fark = (int)Math.Pow(ciftToplam - tekToplam, 2);
+            MessageBox.Show(fark.ToString());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -87,14 +90,26 @@ namespace Loop_For
             int year = DateTime.Now.Year;
             for (int i = 1945; i <= year; i++)
             {
-                if (i != 1995 && i != 2020)
-                    listBox1.Items.Add(i);
-                //if (i == 1995 &&  i == 2020)
-                //    continue;
+                //if (i != 1995 && i != 2020)
+                //    listBox1.Items.Add(i);
+
+                if (i == 1995 || i == 2020)
+                    continue;
 
                 listBox1.Items.Add(i);
             }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            for (int i = 0; i <= 1000; i++)
+            {
+                if (!(i % 2 == 0))
+                    continue;
+                else
+                    listBox1.Items.Add(i);
+            }
         }
     }
 }
