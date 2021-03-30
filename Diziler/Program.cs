@@ -67,15 +67,36 @@ namespace Diziler
             //  4       16      64
             //  2       4       8
 
+            int[] dizi1 = new int[10];
+
+            for (int i = 0; i < dizi1.Length; i++)
+            {
+                dizi1[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("Sayi\tKaresi\tKup");
+            for (int i = 0; i < dizi1.Length; i++)
+            {
+                Console.WriteLine($"{dizi1[i]}\t{dizi1[i]*dizi1[i]}\t{dizi1[i] * dizi1[i]* dizi1[i]}");    
+            }
+
             // Soru 2 : Carpim tapolusunu ekrana bastirin
             //  1 x 1 = 1
             //  1 x 2 = 2
 
-
+            for(int j = 1; j <= 10; j++)
+            {
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine("{0}*{1}={2}\t", i, j, (i * j));
+                }
+                Console.WriteLine();
+            }
             // Soru 3: Klavyeden girilen sayini faktoryelini hesaplayin
 
 
             Console.ReadLine();
         }
+
     }
 }
