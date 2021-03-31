@@ -210,5 +210,28 @@ namespace Kutuphane
                 Console.Write($"{sayilar[i]} ");
             }
         }
+
+        public class OnurOzODev();
+            {
+               int sayi, say = 2, a = 2, b = 3, c = 0;
+            Console.WriteLine("1. Ayda 2, 2.Ayda 3 Davşan Olduğu Var Sayılıyor.");
+            Console.Write("Ay Girin= ");
+            int.TryParse(Console.ReadLine(), out sayi);
+
+            for (int i = 0; i < sayi; i++)
+            {
+
+                if (say < sayi)
+                {
+                    c = a + b;
+                    say++;
+                    a = b;
+                    b = c;
+                }
+
+            }
+            Console.Write("\n" + sayi + ". Ayda Davşan Sayısı " + c + " Olur");
+            Console.ReadKey();
+        }
     }
 }
