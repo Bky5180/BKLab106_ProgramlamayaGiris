@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kutuphane;
+
 namespace Diziler
 {
     class Program
     {
         static void Main(string[] args)
         {
+            #region Diziler_KutuphaneKullanimi
             // Dizi tanimi [] ile tanimlanir. 
             // Diziler Referans tiptedir. 
             // Dizilerin boyutlari sonradan degistirilemez
@@ -92,9 +94,17 @@ namespace Diziler
             //metodlar.CarpimTaplosu();
 
             #endregion
-            //SonsuzDongu();
+            //SonsuzDongu(); 
+            #endregion
 
-            Console.ReadLine();
+            OnurOdev onur = new OnurOdev();
+
+            /*Console.WriteLine("\nTavşan sayısı: " +
+                string.Format("{0:0,0}", onur.Sayim()));*/
+
+            //onur.Siralama();
+
+            Console.ReadKey();
         }
 
         public static void SonsuzDongu()
