@@ -188,54 +188,82 @@ namespace Kutuphane
             }
             return sayi;
         }
-        public int EkrandanSayiOku(string ifade)
+    }
+    public class OnurOdev
+    {
+        //Soru 1
+        /// <summary>
+        /// Decimal'de bile ay değeri en fazla 94 girilebiliyor. Fazlası Exception veriyor.
+        /// </summary>
+        /// <returns>Decimal tipinden</returns>
+        public decimal Sayim()
         {
-            int sayi = 0;
-            string str = "";
-            Console.Write(ifade);
+            decimal dogumSayisi = 1, toplamTavsan = 2;
             try
             {
                 do
                 {
-                    str = Console.ReadLine();
-                    bool donustumu = int.TryParse(str, out sayi);
-                    if (donustumu)
+                    Console.Clear();
+                    Console.Write("Ay sayısı giriniz: ");
+                    bool kontrol = uint.TryParse(Console.ReadLine(), out uint ay);
+
+                    if (kontrol && ay != 0)
                     {
+                        for (int i = 1; i <= ay; i++)
+                        {
+                            dogumSayisi *= 2;
+                            toplamTavsan += dogumSayisi;
+                        }
                         break;
                     }
-                    Console.WriteLine("Lutfen Sayi Giriniz...");
+                    else
+                    {
+                        Console.WriteLine("\nAy değeri sayısal ve en az 1 olmalıdır!");
+                        Console.WriteLine("Tekrar denemek için bir tuşa basınız...");
+                        Console.ReadKey();
+                    }
                 } while (true);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("\nError Message: " + ex.Message);
             }
-            return sayi;
+            return toplamTavsan;
         }
-        public long EkrandanSayiOku(string ifade,int deger)
+
+        //Soru 2
+        /// <summary>
+        /// Küçükten büyüğe sıralama yapan metot
+        /// </summary>
+        public void Siralama()
         {
-            int sayi = 0;
-            string str = "";
-            Console.Write(ifade);
-            try
+            int[] sayilar = new int[3];
+            int uzunluk = sayilar.Length;
+            int gecici;
+
+            for (int i = 0; i < uzunluk; i++)
             {
-                do
+                Console.WriteLine("Bir sayı giriniz: ");
+                sayilar[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                for (int j = 0; j < uzunluk - i - 1; j++)
                 {
-                    str = Console.ReadLine();
-                    bool donustumu = int.TryParse(str, out sayi);
-                    if (donustumu)
+                    if (sayilar[j] > sayilar[j + 1])
                     {
-                        break;
+                        gecici = sayilar[j];
+                        sayilar[j] = sayilar[j + 1];
+                        sayilar[j + 1] = gecici;
                     }
-                    Console.WriteLine("Lutfen Sayi Giriniz...");
-                } while (true);
+                }
             }
-            catch (Exception)
+            Console.WriteLine();
+            for (int i = 0; i < uzunluk; i++)
             {
-                throw;
+                Console.Write($"{sayilar[i]} ");
             }
-            return sayi;
         }
     }
-   
 }
