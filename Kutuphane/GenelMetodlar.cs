@@ -73,6 +73,61 @@ namespace Kutuphane
     }
     public class GenelMetodlar
     {
+
+        /// <summary>
+        /// Verilen sayiya kadar olan fibanocci sayilarini ekrana basar
+        /// </summary>
+        /// <param name="sayiAdet"></param>
+        public void Fibanocci(int sayiAdet)
+        {
+            decimal  birinciSayi = 0;
+            decimal ikinciSayi = 1;
+            decimal temp;
+            for (int i = 0; i < sayiAdet; i++)
+            {
+                Console.WriteLine($"{i}.Sayi: {birinciSayi}");
+                temp = ikinciSayi;
+                ikinciSayi = birinciSayi + ikinciSayi;
+                birinciSayi = temp;
+                if (i < sayiAdet - 1)
+                    Console.Write(",");
+            }
+        
+        }
+
+        public void fibanocciDizi()
+        {
+            // Dizinin boyutunu ve tipini belirleyelim .
+
+
+            int boyut = EkrandanSayiOku("Fibanocci Dizisinin Ust Limitini giriniz:");
+
+
+            // ULong tipinden ekrandan alinan sayi boyutunda bir dizi olusturur
+
+            ulong[] fibanocci = new ulong[boyut];
+            for (int i = 0; i < boyut; i++)
+            {
+                //Sifira Esitse 
+                if (i == 0)
+                {
+                    fibanocci[i] = 0;
+                }
+                else if (i == 1)
+                {
+                    fibanocci[i] = 1;
+                }
+                else // Birden buyukse
+                {
+                    fibanocci[i] = fibanocci[i - 1] + fibanocci[i - 2];
+                }
+
+                Console.WriteLine($"fibanocci[{i + 1}]:{fibanocci[i]}");
+            }
+
+
+        }
+
         /// <summary>
         /// Carpim tablosunu Console da gosterir
         /// </summary>
@@ -132,6 +187,83 @@ namespace Kutuphane
                 throw;
             }
             return sayi;
+        }
+    }
+    public class OnurOdev
+    {
+        //Soru 1
+        /// <summary>
+        /// Decimal'de bile ay değeri en fazla 94 girilebiliyor. Fazlası Exception veriyor.
+        /// </summary>
+        /// <returns>Decimal tipinden</returns>
+        public decimal Sayim()
+        {
+            decimal dogumSayisi = 1, toplamTavsan = 2;
+            try
+            {
+                do
+                {
+                    Console.Clear();
+                    Console.Write("Ay sayısı giriniz: ");
+                    bool kontrol = uint.TryParse(Console.ReadLine(), out uint ay);
+
+                    if (kontrol && ay != 0)
+                    {
+                        for (int i = 1; i <= ay; i++)
+                        {
+                            dogumSayisi *= 2;
+                            toplamTavsan += dogumSayisi;
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nAy değeri sayısal ve en az 1 olmalıdır!");
+                        Console.WriteLine("Tekrar denemek için bir tuşa basınız...");
+                        Console.ReadKey();
+                    }
+                } while (true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\nError Message: " + ex.Message);
+            }
+            return toplamTavsan;
+        }
+
+        //Soru 2
+        /// <summary>
+        /// Küçükten büyüğe sıralama yapan metot
+        /// </summary>
+        public void Siralama()
+        {
+            int[] sayilar = new int[3];
+            int uzunluk = sayilar.Length;
+            int gecici;
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                Console.WriteLine("Bir sayı giriniz: ");
+                sayilar[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                for (int j = 0; j < uzunluk - i - 1; j++)
+                {
+                    if (sayilar[j] > sayilar[j + 1])
+                    {
+                        gecici = sayilar[j];
+                        sayilar[j] = sayilar[j + 1];
+                        sayilar[j + 1] = gecici;
+                    }
+                }
+            }
+            Console.WriteLine();
+            for (int i = 0; i < uzunluk; i++)
+            {
+                Console.Write($"{sayilar[i]} ");
+            }
         }
     }
 }

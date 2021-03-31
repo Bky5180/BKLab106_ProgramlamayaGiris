@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Kutuphane;
 namespace ConsoleApp1
 {
     class Program
@@ -85,24 +85,33 @@ namespace ConsoleApp1
             Console.ReadLine();
         }
 
-
+        // 1,1,2,3,5,8,13
         static void Main(string[] args)
         {
+            int boyut = 0;
+            GenelMetodlar genel = new GenelMetodlar();
 
+            // genel.Fibanocci(200);
+
+            genel.fibanocciDizi();
+            
+            
+            
+            
             //Deneme1();
 
-            int a = 0;
-            string str;
-            a = SayiOku();
-            str = stringOku();
+            //int a = 0;
+            //string str;
+            //a = SayiOku();
+            //str = stringOku();
 
-            // Ekrana basma Yontemleri
-            // 1. Yontem
-            Console.WriteLine("Gelen String: " + str);
-            // 2.Yontem  C dilindeki yapinin aynisi.
-            Console.WriteLine("Gelen String:{0}  Gelen int :{1}", str, a);
-            // 3. Yontem
-            Console.WriteLine($"Gelen String:{str}  Gelen int :{a}");
+            //// Ekrana basma Yontemleri
+            //// 1. Yontem
+            //Console.WriteLine("Gelen String: " + str);
+            //// 2.Yontem  C dilindeki yapinin aynisi.
+            //Console.WriteLine("Gelen String:{0}  Gelen int :{1}", str, a);
+            //// 3. Yontem
+            //Console.WriteLine($"Gelen String:{str}  Gelen int :{a}");
 
 
             Console.ReadKey();

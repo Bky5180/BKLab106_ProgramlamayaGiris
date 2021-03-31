@@ -11,6 +11,16 @@ namespace Kutuphane
         /// Decimal'de bile ay değeri en fazla 94 girilebiliyor. Fazlası Exception veriyor.
         /// </summary>
         /// <returns>Decimal tipinden</returns>
+
+        /*
+        Odev : Bir cift Tavsanimiz var . Bu tavsanlar yavrudur.
+           Yavru tavsanlar bir ay icerisinde ergenlige ulasmaktadir.
+           Ergenlesen her cift tavsan bir ay sonra bir cift tavsan dogurmaktadir.
+           Bu matematige gore de tavsanlar ölümsüzdür.
+           100 ay  sonra kac tavsanim olur ?     
+    */
+      //  1 ,1 ,2 ,3 ,5 ,8 ,13 ,21,34,55
+
         public decimal Sayim()
         {
             decimal dogumSayisi = 1, toplamTavsan = 2;
