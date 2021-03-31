@@ -31,29 +31,58 @@ namespace Loop_While
         }
         public void ekraniTenmizle()
         {
-            
-
             int index = 0;
-            //index = this.Controls["groupBox1"].Controls.Count;
-            //foreach (var item in this.Controls["groupBox1"].Controls)
+
+            // From Uzerindeki nesnelere ulasmak icin 
+            //while (index < this.Controls["groupBox1"].Controls.Count)
             //{
-            //    if (item is TextBox)
+            //    if (this.Controls["groupBox1"].Controls[index] is TextBox)
             //    {
-                    
+            //        this.Controls["groupBox1"].Controls[index].Text = "";
             //    }
+
+            //    index++;
             //}
 
-            while (index < this.Controls["groupBox1"].Controls.Count)
+
+            // Direk groupBox icerisindeki nesnelere ulasmak icin
+            while (index < groupBox1.Controls.Count)
             {
-                if (this.Controls["groupBox1"].Controls[index] is TextBox)
+                if (groupBox1.Controls[index] is TextBox)
                 {
-                    this.Controls["groupBox1"].Controls[index].Text = "";
+                    groupBox1.Controls[index].Text = "";
                 }
 
                 index++;
             }
 
-        
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int faktoryel = 1;
+            int i = 5;
+            while (i>0)
+            {
+                faktoryel = faktoryel * i;
+                i--;
+            }
+
+            MessageBox.Show(faktoryel.ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int faktoryel = 1;
+            int i = 5;
+            do
+            {
+                faktoryel = faktoryel * i;
+                i--;
+            } while (i > 0);
+
+            MessageBox.Show(faktoryel.ToString());
         }
     }
 }
