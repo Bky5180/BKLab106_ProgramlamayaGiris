@@ -121,8 +121,8 @@ namespace Kutuphane
                 {
                     fibanocci[i] = fibanocci[i - 1] + fibanocci[i - 2];
                 }
-
-                Console.WriteLine($"fibanocci[{i + 1}]:{fibanocci[i]}");
+                if(i>2)
+                Console.WriteLine($"fibanocci[{i + 1}]:{fibanocci[i]} ==> {(float)fibanocci[i] / fibanocci[i-1]}");
             }
 
 
