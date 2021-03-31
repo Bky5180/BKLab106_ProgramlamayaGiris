@@ -19,7 +19,25 @@ namespace Diziler
             // 
 
             // ornek
-            int[] yas = new int[12]; // Hafiza da Heap bolgesinde yer tutar
+
+            //  Dizilerin dinamik olarak arttirmak 
+
+            int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9,10 };
+
+            int[] sayilar2 = new int[20];
+
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                sayilar2[i] = sayilar[i];
+
+            }
+
+            for (int i = 0; i < sayilar2.Length; i++)
+            {
+                Console.WriteLine(sayilar2[i]);
+            }
+                
+                //int[] yas = new int[12]; // Hafiza da Heap bolgesinde yer tutar
                                      // Lisedeki dersler dizisi
                                      //1. yontem Instance alarak belirlemek
                                      //string[] dersler = new string[10];
