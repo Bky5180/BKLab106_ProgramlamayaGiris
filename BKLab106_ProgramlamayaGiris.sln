@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loop_For", "Loop_For\Loop_F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{EA548F3C-F648-4A11-A093-229ED58F2528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane", "Kutuphane\Kutuphane.csproj", "{4FB6AA37-2EF9-4407-8215-106537AC8ABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kutuphane", "Kutuphane\Kutuphane.csproj", "{4FB6AA37-2EF9-4407-8215-106537AC8ABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreConsole", "CoreConsole\coreConsole\coreConsole.csproj", "{66BBD8CF-A2B8-4E2F-A7A1-1861B4DA8189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreConsole", "CoreConsole\coreConsole\coreConsole.csproj", "{66BBD8CF-A2B8-4E2F-A7A1-1861B4DA8189}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
