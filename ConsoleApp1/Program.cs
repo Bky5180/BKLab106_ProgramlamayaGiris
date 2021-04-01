@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-      
+
         static string stringOku()
         {
             string str = "";
@@ -19,7 +19,7 @@ namespace ConsoleApp1
         static int SayiOku()
         {
             // 1. Sayiyiyi Oku
-            int s1 =0;
+            int s1 = 0;
             string str = "";
             try
             {
@@ -32,15 +32,15 @@ namespace ConsoleApp1
 
                 Console.WriteLine("Duzgun bir sayi giriniz.");
             }
-           
-            
+
+
             return -5;
         }
         static void Deneme1()
-        {  
-            
+        {
+
             //Disaridan alinan iki sayının toplamiyla farkinin birbirine
-           // bolumunden kalanin sonucu kactir? (Farkın toplama bolumunden kalan kactir?)
+            // bolumunden kalanin sonucu kactir? (Farkın toplama bolumunden kalan kactir?)
             int s1, s2, toplam, fark;
             string str1, str2;
             DateTime date;
@@ -92,12 +92,10 @@ namespace ConsoleApp1
             GenelMetodlar genel = new GenelMetodlar();
 
             // genel.Fibanocci(200);
-
             genel.fibanocciDizi();
-            
-            
-            
-            
+
+            //boyut = genel.EkrandanSayiOku("Fibonacci Dizisinin Üst Limitini Giriniz: ");
+
             //Deneme1();
 
             //int a = 0;

@@ -80,7 +80,7 @@ namespace Kutuphane
         /// <param name="sayiAdet"></param>
         public void Fibanocci(int sayiAdet)
         {
-            decimal  birinciSayi = 0;
+            decimal birinciSayi = 0;
             decimal ikinciSayi = 1;
             decimal temp;
             for (int i = 0; i < sayiAdet; i++)
@@ -92,7 +92,7 @@ namespace Kutuphane
                 if (i < sayiAdet - 1)
                     Console.Write(",");
             }
-        
+
         }
 
         public void fibanocciDizi()
@@ -121,8 +121,8 @@ namespace Kutuphane
                 {
                     fibanocci[i] = fibanocci[i - 1] + fibanocci[i - 2];
                 }
-                if(i>2)
-                Console.WriteLine($"fibanocci[{i + 1}]:{fibanocci[i]} ==> {(float)fibanocci[i] / fibanocci[i-1]}");
+                if (i >= 2)
+                    Console.WriteLine($"fibanocci[{i + 1}]:{fibanocci[i]} ==> {(float)fibanocci[i] / fibanocci[i - 1]}");
             }
 
 
@@ -169,6 +169,54 @@ namespace Kutuphane
             int sayi = 0;
             string str = "";
             Console.Write("Bir Sayi Giriniz:");
+            try
+            {
+                do
+                {
+                    str = Console.ReadLine();
+                    bool donustumu = int.TryParse(str, out sayi);
+                    if (donustumu)
+                    {
+                        break;
+                    }
+                    Console.WriteLine("Lutfen Sayi Giriniz...");
+                } while (true);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return sayi;
+        }
+        public int EkrandanSayiOku(string ifade)
+        {
+            int sayi = 0;
+            string str = "";
+            Console.Write(ifade);
+            try
+            {
+                do
+                {
+                    str = Console.ReadLine();
+                    bool donustumu = int.TryParse(str, out sayi);
+                    if (donustumu)
+                    {
+                        break;
+                    }
+                    Console.WriteLine("Lutfen Sayi Giriniz...");
+                } while (true);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return sayi;
+        }
+        public long EkrandanSayiOku(string ifade, int deger)
+        {
+            int sayi = 0;
+            string str = "";
+            Console.Write(ifade);
             try
             {
                 do
