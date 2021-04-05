@@ -319,7 +319,7 @@ namespace Kutuphane
             int toplam = 0;
             for (int i = 0; i < sayi.Length; i++)
             {
-                toplam += i;
+                toplam += sayi[i];
             }
             return toplam;
         }
