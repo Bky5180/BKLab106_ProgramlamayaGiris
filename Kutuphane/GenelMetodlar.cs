@@ -18,12 +18,15 @@ namespace Kutuphane
      Programini yapmayin. Sadece tahtada calisin
      */
 
+
+
+    
     public static class GenelStaticMetodlar
     {
         public static void CarpimTaplosu()
         {
             //Ceren Sahin Cozumu
-
+            
             for (int j = 1; j <= 10; j++)
             {
                 for (int i = 1; i <= 10; i++)
@@ -71,9 +74,13 @@ namespace Kutuphane
             return sayi;
         }
     }
+
+    /// <summary>
+    /// Genel anlamada hosumuza giden metodlari topladigimiz kutuphane
+    /// </summary>
     public class GenelMetodlar
     {
-
+         int abc;
         /// <summary>
         /// Verilen sayiya kadar olan fibanocci sayilarini ekrana basar
         /// </summary>
@@ -144,7 +151,11 @@ namespace Kutuphane
                 Console.WriteLine();
             }
         }
+        void test()
+        {
 
+
+        }
         /// <summary>
         /// Verilen sayinin faktoryelini  hesaplar
         /// </summary>
@@ -236,6 +247,150 @@ namespace Kutuphane
             }
             return sayi;
         }
+
+        /// <summary>
+        /// Bu metod verilen sayinin verilen ust'unu alir
+        /// </summary>
+        /// <param name="sayi">ust'u alinacak sayi</param>
+        /// <param name="ust">kacinci kuvveti oldugunu belirtir</param>
+        /// <returns></returns>
+        public double UstAlma(double sayi, double ust)
+        {
+            return Math.Pow(sayi, ust);
+        }
+       
+
+        public double UstAlma(int sayi, int ust)
+        {
+            
+                int abc;
+           
+           
+            return Math.Pow(sayi, ust);
+        }
+        public double UstAlma(float sayi, float ust)
+        {
+            return Math.Pow(sayi, ust);
+        }
+        public double UstAlma(long sayi, long ust)
+        {
+            return Math.Pow(sayi, ust);
+        }
+
+       public int MutlakDeger(int sayi)
+        {
+
+            return Math.Abs(sayi);
+        }
+
+        public double UstAlma(int sayi,out double sayi2 )
+        {
+
+            sayi2 = Math.Pow(sayi, 3);
+
+            return Math.Pow(sayi, 2);
+
+            
+        }
+
+
+        public double refDeneme(int sayi, ref double sayi2)
+        {
+
+
+            sayi2 = Math.Pow(sayi, 4);
+            return Math.Pow(sayi,2);
+        }
+
+        public int topla(int a, int b)
+        {
+            return a + b;
+        }
+        public int topla(int a, int b,int c)
+        {
+            return a + b+c;
+        }
+        public int topla(int a, int b, int c,int d)
+        {
+            return a + b + c+d;
+        }
+        public int topla(params int[] sayi )
+        {
+            int toplam = 0;
+            for (int i = 0; i < sayi.Length; i++)
+            {
+                toplam += i;
+            }
+            return toplam;
+        }
+
+        public double AsagiYuvarla(double sayi)
+        {
+            //Floor => Verilen ondalikli degeri, bir alt tam degere tamamlar...
+            return Math.Floor(sayi);
+
+        }
+        /// <summary>
+        /// Ceiling => Verilen ondalikli degeri, bir ust tam degere tamamlar...
+        /// </summary>
+        /// <param name="sayi"></param>
+        /// <returns></returns>
+        public double YukariYuvarla(double sayi)
+        {
+           
+            return  Math.Ceiling(sayi);
+        }
+        /// <summary>
+        /// Round => Sayinin yarisindan fazlasini bir uste, yarisindan azini ise bir alttaki tam sayiya yuvarlar...
+        ///
+        /// NOT : .'dan önceki sayı çift ise bir alt değere, tek ise bir üst değere tamamlar. (NOT: .'dan sonraki değer 50 ise)
+        /// </summary>
+        /// <param name="sayi"></param>
+        /// <returns></returns>
+        public double Yuvarla(double sayi)
+        {
+            
+
+
+            return Math.Round(sayi);
+
+        }
+        /// <summary>
+        /// Truncate => Sayının ondalikli kismina bakmaz, yalnizca tam kismini size teslim eder...
+        /// </summary>
+        /// <param name="sayi"></param>
+        /// <returns></returns>
+        public double OndalikTemizle(double sayi)
+        {
+            //
+           return Math.Truncate(sayi);
+
+        }
+        /// <summary>
+        /// Sqrt => Bir sayının karekokunu hesaplamak icin kullanilir...
+        /// </summary>
+        /// <param name="sayi"></param>
+        /// <returns></returns>
+        public double KareKok(double sayi)
+        {
+            return Math.Sqrt(sayi);
+        }
+
+
+
+        /// <summary>
+        ///  SIGN => Bir sayinin negatif, pozitif ya da 0'a esit olup olmadigiyla ilgili bildirim doner...
+        //    Eger sayi negatifse -1, pozitifse +1, 0 ise size 0 degerini doner...
+        /// </summary>
+        /// <param name="sayi"></param>
+        /// <returns></returns>
+        public int SayiIsareti(double sayi)
+        {
+
+            return Math.Sign(sayi);
+        
+        }
+
     }
     //public class OnurOdev
     //{
