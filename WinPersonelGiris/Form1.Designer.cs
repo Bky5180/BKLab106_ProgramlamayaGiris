@@ -58,6 +58,7 @@
             this.checkOutdor = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.Personel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbHobiler.SuspendLayout();
@@ -362,11 +363,20 @@
             this.dtpDogumTarihi.Size = new System.Drawing.Size(111, 20);
             this.dtpDogumTarihi.TabIndex = 6;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(374, 401);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(355, 186);
+            this.listBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 644);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Personel);
             this.Name = "Form1";
@@ -413,6 +423,7 @@
         private System.Windows.Forms.ComboBox cmbSehir;
         private System.Windows.Forms.TextBox txtIlce;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
