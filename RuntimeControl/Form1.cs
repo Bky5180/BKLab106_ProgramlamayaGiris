@@ -20,7 +20,7 @@ namespace RuntimeControl
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Random rnd = new Random();
+           
             for (int i = 0; i < 165; i++)
             {
                 PictureBox pcb = new PictureBox();
@@ -30,6 +30,16 @@ namespace RuntimeControl
                 pcb.Margin = new Padding(1); // dış kenar boşluklar
                 pcb.BackColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
                 flowLayoutPanel1.Controls.Add(pcb);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            foreach (var item in flowLayoutPanel1.Controls)
+            {
+                PictureBox pcb = (PictureBox)item;
+
+                pcb.BackColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
             }
         }
     }
