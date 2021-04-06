@@ -53,21 +53,21 @@
             this.checkSinema = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbHobiler = new System.Windows.Forms.GroupBox();
             this.checkSpor = new System.Windows.Forms.CheckBox();
             this.checkOutdor = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.Personel.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbHobiler.SuspendLayout();
             this.SuspendLayout();
             // 
             // Personel
             // 
             this.Personel.Controls.Add(this.dtpDogumTarihi);
             this.Personel.Controls.Add(this.label10);
-            this.Personel.Controls.Add(this.groupBox2);
+            this.Personel.Controls.Add(this.gbHobiler);
             this.Personel.Controls.Add(this.button1);
             this.Personel.Controls.Add(this.txtEmail);
             this.Personel.Controls.Add(this.label5);
@@ -126,7 +126,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(104, 78);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(111, 20);
-            this.txtSoyad.TabIndex = 3;
+            this.txtSoyad.TabIndex = 2;
             // 
             // label2
             // 
@@ -142,7 +142,7 @@
             this.txtTcKimlik.Location = new System.Drawing.Point(104, 115);
             this.txtTcKimlik.Name = "txtTcKimlik";
             this.txtTcKimlik.Size = new System.Drawing.Size(111, 20);
-            this.txtTcKimlik.TabIndex = 5;
+            this.txtTcKimlik.TabIndex = 3;
             // 
             // label3
             // 
@@ -158,7 +158,7 @@
             this.txtGsm.Location = new System.Drawing.Point(104, 159);
             this.txtGsm.Name = "txtGsm";
             this.txtGsm.Size = new System.Drawing.Size(111, 20);
-            this.txtGsm.TabIndex = 7;
+            this.txtGsm.TabIndex = 4;
             // 
             // label4
             // 
@@ -174,7 +174,7 @@
             this.txtEmail.Location = new System.Drawing.Point(104, 206);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(111, 20);
-            this.txtEmail.TabIndex = 9;
+            this.txtEmail.TabIndex = 5;
             // 
             // label5
             // 
@@ -290,7 +290,7 @@
             this.checkSinema.Location = new System.Drawing.Point(6, 19);
             this.checkSinema.Name = "checkSinema";
             this.checkSinema.Size = new System.Drawing.Size(61, 17);
-            this.checkSinema.TabIndex = 11;
+            this.checkSinema.TabIndex = 8;
             this.checkSinema.Text = "Sinema";
             this.checkSinema.UseVisualStyleBackColor = true;
             // 
@@ -298,10 +298,11 @@
             // 
             this.button1.Location = new System.Drawing.Point(26, 484);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 23);
+            this.button1.Size = new System.Drawing.Size(201, 23);
             this.button1.TabIndex = 12;
             this.button1.Text = "Personel Kaydet";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -312,18 +313,18 @@
             this.button2.Text = "Adres Kaydet";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbHobiler
             // 
-            this.groupBox2.Controls.Add(this.checkOutdor);
-            this.groupBox2.Controls.Add(this.checkSpor);
-            this.groupBox2.Controls.Add(this.checkSinema);
-            this.groupBox2.Controls.Add(this.checkMuzik);
-            this.groupBox2.Location = new System.Drawing.Point(26, 342);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(201, 100);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Hobiler";
+            this.gbHobiler.Controls.Add(this.checkOutdor);
+            this.gbHobiler.Controls.Add(this.checkSpor);
+            this.gbHobiler.Controls.Add(this.checkSinema);
+            this.gbHobiler.Controls.Add(this.checkMuzik);
+            this.gbHobiler.Location = new System.Drawing.Point(26, 342);
+            this.gbHobiler.Name = "gbHobiler";
+            this.gbHobiler.Size = new System.Drawing.Size(201, 100);
+            this.gbHobiler.TabIndex = 7;
+            this.gbHobiler.TabStop = false;
+            this.gbHobiler.Text = "Hobiler";
             // 
             // checkSpor
             // 
@@ -331,7 +332,7 @@
             this.checkSpor.Location = new System.Drawing.Point(116, 19);
             this.checkSpor.Name = "checkSpor";
             this.checkSpor.Size = new System.Drawing.Size(48, 17);
-            this.checkSpor.TabIndex = 12;
+            this.checkSpor.TabIndex = 9;
             this.checkSpor.Text = "Spor";
             this.checkSpor.UseVisualStyleBackColor = true;
             // 
@@ -341,7 +342,7 @@
             this.checkOutdor.Location = new System.Drawing.Point(116, 56);
             this.checkOutdor.Name = "checkOutdor";
             this.checkOutdor.Size = new System.Drawing.Size(64, 17);
-            this.checkOutdor.TabIndex = 13;
+            this.checkOutdor.TabIndex = 11;
             this.checkOutdor.Text = "Outdoor";
             this.checkOutdor.UseVisualStyleBackColor = true;
             // 
@@ -359,7 +360,7 @@
             this.dtpDogumTarihi.Location = new System.Drawing.Point(104, 268);
             this.dtpDogumTarihi.Name = "dtpDogumTarihi";
             this.dtpDogumTarihi.Size = new System.Drawing.Size(111, 20);
-            this.dtpDogumTarihi.TabIndex = 14;
+            this.dtpDogumTarihi.TabIndex = 6;
             // 
             // Form1
             // 
@@ -374,8 +375,8 @@
             this.Personel.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbHobiler.ResumeLayout(false);
+            this.gbHobiler.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -385,7 +386,7 @@
         private System.Windows.Forms.GroupBox Personel;
         private System.Windows.Forms.DateTimePicker dtpDogumTarihi;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbHobiler;
         private System.Windows.Forms.CheckBox checkOutdor;
         private System.Windows.Forms.CheckBox checkSpor;
         private System.Windows.Forms.CheckBox checkSinema;
