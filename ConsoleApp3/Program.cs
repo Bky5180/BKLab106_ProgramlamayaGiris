@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Kutuphane;
 namespace TipDonusumleri
 {
     class Program
@@ -17,25 +17,32 @@ namespace TipDonusumleri
             Int16 sayi2 = (Int16)sayi; // 57600
 
             //TipDonusum();
-            TarihTipDonusum();
+            //TarihTipDonusum();
             //1110 1000
             //101 1111 0101 1110 0001 0000 0000
             //101 1111 0101 1110 0001 0000 0000
-            Console.WriteLine(sayi2.ToString());
-            Console.WriteLine(sayi.ToString());
+            //Console.WriteLine(sayi2.ToString());
+            //Console.WriteLine(sayi.ToString());
+
+
+            GenelMetodlar.CarpimTaplosu();
+           
+
+            
+
         }
 
         public static void TarihTipDonusum()
         {
             Console.WriteLine(Convert.ToDateTime("12/24/2020")); // Format mm/dd/yyyy kabul eder
-            Console.WriteLine(Convert.ToDateTime("12-24-2020")); 
+            Console.WriteLine(Convert.ToDateTime("12-24-2020"));
             Console.WriteLine(Convert.ToDateTime("12,24,2020"));
             Console.WriteLine(Convert.ToDateTime("12.24.2020")); // 
             Console.WriteLine(Convert.ToDateTime("12 24 2020")); // Bosluk Kabul Eder
             //Console.WriteLine(Convert.ToDateTime("12;24;2020")); // Gecersiz format
             Console.WriteLine(Convert.ToDateTime("24/12/2020")); // Gecersiz Format dd/ mm / yyyy
 
-            
+
         }
 
         public static void TipDonusum()
