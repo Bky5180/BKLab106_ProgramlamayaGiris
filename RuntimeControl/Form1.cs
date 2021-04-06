@@ -17,10 +17,19 @@ namespace RuntimeControl
         {
             InitializeComponent();
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
+            /*
+                toplam 165 adet picturebox var. 
+                Ben 20 adet sayi olusturulacak
+                20 ADET sayi random vaziyette 1-165 arasinda olusturulacak
+                Bir dizide tutulacak.
+                
+         
+            */
+
             for (int i = 0; i < 165; i++)
             {
                 PictureBox pcb = new PictureBox();
