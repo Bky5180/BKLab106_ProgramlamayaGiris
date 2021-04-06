@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefOut", "RefOut\RefOut.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPersonelGiris", "WinPersonelGiris\WinPersonelGiris.csproj", "{88707D8B-2976-40C8-B52E-56F52DFAE365}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeControl", "RuntimeControl\RuntimeControl.csproj", "{129DC31D-2680-421A-A09C-47DA9912EE23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{88707D8B-2976-40C8-B52E-56F52DFAE365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88707D8B-2976-40C8-B52E-56F52DFAE365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88707D8B-2976-40C8-B52E-56F52DFAE365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{129DC31D-2680-421A-A09C-47DA9912EE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129DC31D-2680-421A-A09C-47DA9912EE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129DC31D-2680-421A-A09C-47DA9912EE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129DC31D-2680-421A-A09C-47DA9912EE23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
