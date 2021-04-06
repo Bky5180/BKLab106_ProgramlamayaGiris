@@ -40,28 +40,42 @@ namespace MathLib
 
             //Console.WriteLine("Toplam :"+ genel.topla(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7));
 
-            Console.WriteLine("Out Oncesi :"+sayi);
+            //Console.WriteLine("Out Oncesi :"+sayi);
 
             //Console.WriteLine("Out Sonrasi :" + TestOut(out sayi));
 
-            int sayi1, sayi2;
-            int toplam, fark, carpim;
-            int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-           
-            sayi1 = 5;
-            sayi2 = 6;
-            TestOut(sayi1,sayi2,out toplam ,out fark,out carpim );
-            Testref(sayilar);
-            Testref2( sayi1);
+            //int sayi1, sayi2;
+            //int toplam, fark, carpim;
+            //int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            //sayi1 = 5;
+            //sayi2 = 6;
+            //TestOut(sayi1,sayi2,out toplam ,out fark,out carpim );
+            //Testref(sayilar);
+            //Testref2( sayi1);
+
+            string[] ogrenciler = new string[] { "Ali", "Veli", "Ayse", "Fatma" };
+            TestStringRef(ref ogrenciler);
+
+
+
         }
         public static void Testref(int[] sayilar)
         {
-
+            //TODO: Burasi arastirilacak
             sayilar = new int[]{ 45,65,98,78};
             sayilar[0] = 321;
-            
+          
 
-            
+        }
+
+        public static void TestStringRef(ref string[] dizi)
+        {
+             dizi = new string[] { "Mus", "Van", "Adana", "Rize" };
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    dizi[i] = i.ToString();
+            //}
 
         }
         private static void Testref2( int sayi1)
