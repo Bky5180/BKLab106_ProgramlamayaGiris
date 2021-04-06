@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Kutuphane;
 namespace ConsoleApp1
 {
+   
     class Program
     {
 
@@ -88,6 +89,9 @@ namespace ConsoleApp1
         // 1,1,2,3,5,8,13
         static void Main(string[] args)
         {
+
+          
+            
             int boyut = 0;
             GenelMetodlar genel = new GenelMetodlar();
 

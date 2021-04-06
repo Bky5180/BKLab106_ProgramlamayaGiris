@@ -7,56 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinPersonelGiris.VeriGiris;
 
 namespace WinPersonelGiris
 {
-    public struct Personel
-    {
-        public string Ad;
-        public string soyad;
-        string _tckimlik; //11 Haneli olup olmadigini kontol 
-        public string gsm;
-        public string email;
-        public DateTime dogumtarihi;
-        public Hobiler hobi;
-        public Adres adres;
 
-        public string SetTcKimlik(string tckimlik)
-        {
-            string str = "";
-            if (tckimlik.Length == 11)
-            {
-                _tckimlik = tckimlik;
-                str = "Ok";
-            }
-            else
-            {
-                str = "Verilen deger 11 karakter uzunlugunda degildir";
-            }
 
-            return str;
-        }
-        public string GetTcKimlik()
-        {
-            if (_tckimlik == null)
-                return "TcKimlik Tanimli Degildir";
-            else
-                return "********"+_tckimlik.Substring(8);
-        }
-    }
-    public struct Adres
-    {
-        public int adresTipi;
-        public string Sehir;
-        public string Ilce;
-        public string AcikAdres;
-    
-    }
 
-    public struct Hobiler
-    {
-        public string hobi;
-    }
     public partial class Form1 : Form
     {
 
@@ -71,8 +28,11 @@ namespace WinPersonelGiris
         {
             Personel p = new Personel();
            string str =  p.SetTcKimlik(txtTcKimlik.Text);
-
-            p.Ad = txtAdi.Text;
+            
+            AldigiEgitimler egitimler = new AldigiEgitimler();
+            
+            
+           p.Ad = txtAdi.Text;
            p.soyad = txtSoyad.Text;
            //p.tckimlik = txtTcKimlik.Text;
            p.gsm = txtGsm.Text;
