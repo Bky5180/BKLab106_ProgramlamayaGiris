@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPersonelGiris", "WinPers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeControl", "RuntimeControl\RuntimeControl.csproj", "{129DC31D-2680-421A-A09C-47DA9912EE23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemIO", "SystemIO\SystemIO.csproj", "{F643D1EE-DD2A-40FD-B71D-1D927826CF65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{129DC31D-2680-421A-A09C-47DA9912EE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{129DC31D-2680-421A-A09C-47DA9912EE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{129DC31D-2680-421A-A09C-47DA9912EE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
