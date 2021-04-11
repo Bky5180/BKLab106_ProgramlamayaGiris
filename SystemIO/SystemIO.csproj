@@ -52,10 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OK_DirectoryList.cs">
+    <Compile Include="Onur KIZILDAŞ\OK_DirectoryList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OK_DirectoryList.Designer.cs">
+    <Compile Include="Onur KIZILDAŞ\OK_DirectoryList.Designer.cs">
       <DependentUpon>OK_DirectoryList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -63,7 +63,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OK_DirectoryList.resx">
+    <EmbeddedResource Include="Onur KIZILDAŞ\OK_DirectoryList.resx">
       <DependentUpon>OK_DirectoryList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -52,8 +52,9 @@ namespace SystemIO
             this.splitContainer1.Panel1.Controls.Add(this.listDrive);
             this.splitContainer1.Panel1.Controls.Add(this.listFile);
             this.splitContainer1.Panel1.Controls.Add(this.listDirectory);
-            this.splitContainer1.Size = new System.Drawing.Size(1631, 740);
-            this.splitContainer1.SplitterDistance = 860;
+            this.splitContainer1.Size = new System.Drawing.Size(895, 740);
+            this.splitContainer1.SplitterDistance = 866;
+            this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 3;
             // 
             // lblDirectory
@@ -108,8 +109,9 @@ namespace SystemIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1655, 764);
+            this.ClientSize = new System.Drawing.Size(890, 764);
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "OK_DirectoryList";
             this.Text = "OK_DirectoryList";
             this.Load += new System.EventHandler(this.OK_DirectoryList_Load);
