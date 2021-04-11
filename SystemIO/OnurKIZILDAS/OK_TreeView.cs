@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace SystemIO.Onur_KIZILDAŞ
 {
@@ -15,6 +16,12 @@ namespace SystemIO.Onur_KIZILDAŞ
         public OK_TreeView()
         {
             InitializeComponent();
+        }
+        private void btnYukle_Click(object sender, EventArgs e)
+        {
+            treeView1.Nodes.Clear();
+            toolTip1.ShowAlways = true;
+
         }
     }
 }
