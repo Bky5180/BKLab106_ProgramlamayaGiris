@@ -8,24 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Security.AccessControl;
 
 namespace SystemIO
 {
     public partial class OK_DirectoryList : Form
     {
-        DirectoryInfo directory, dirPath;
+        DirectoryInfo directory;
         string[] dirsD;
+
         private string currentDirectory;
+        private string dirPath;
         public string CurrentDirectory
         {
             get { return currentDirectory; }
             set
             {
-                currentDirectory =
-                    value.Replace(value, directory.ToString());
+                if (directory is null)
+                    currentDirectory = "";
+                else
+                {
+                    if (string.IsNullOrEmpty(value))
+                        Directory.SetCurrentDirectory(directory.FullName);
+                    else
+                        Directory.SetCurrentDirectory(value);
+
+                    currentDirectory = Directory.GetCurrentDirectory();
+                }
             }
         }
+
         public OK_DirectoryList()
         {
             InitializeComponent();
@@ -36,57 +47,53 @@ namespace SystemIO
             foreach (var drive in drives)
                 listDrive.Items.Add(drive.Name);
         }
-        private void listDrive_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListDrive_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
                 DriveInfo drive = new DriveInfo(listDrive.SelectedItem.ToString());
                 directory = drive.RootDirectory;
-                //ChangeDirectory();
-                //ChangeDirectory2();
 
                 GetDirsFiles(out string[] dirsF, out string[] files);
+                dirPath = null;
+                ChangeDirectory();
 
                 listDirectory.Items.Clear();
-                listFile.Items.Clear();
                 foreach (var dirD in dirsD)
                     listDirectory.Items.Add(dirD);
-                //listDirectory.Items.Add(Path.GetFileName(dirD));
+
+                listFile.Items.Clear();
             }
             catch (Exception)
             {
                 MessageBox.Show("Lütfen bir sürücü seçiniz!");
             }
         }
-        private void listDirectory_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListDirectory_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
                 GetDirsFiles(out string[] dirsF, out string[] files);
+                ChangeDirectory();
 
                 listFile.Items.Clear();
                 foreach (var dirF in dirsF)
                     listFile.Items.Add(dirF);
-                //listFile.Items.Add(Path.GetFileName(dirF));
 
                 foreach (var file in files)
                     listFile.Items.Add(file);
-                //listFile.Items.Add(Path.GetFileName(file));
             }
             catch (Exception)
             {
+                listFile.Items.Clear();
+                lblDirectory.Text = "";
                 MessageBox.Show("Lütfen bir klasör seçiniz!");
             }
         }
         private void ChangeDirectory()
         {
-            CurrentDirectory = Directory.GetCurrentDirectory();
+            CurrentDirectory = dirPath;
             lblDirectory.Text = CurrentDirectory;
-        }
-        private void ChangeDirectory2()
-        {
-            Directory.SetCurrentDirectory(directory.FullName);
-            lblDirectory.Text = Directory.GetCurrentDirectory();
         }
         private string[] GetDirsFiles(out string[] dirsF, out string[] files)
         {
@@ -94,12 +101,10 @@ namespace SystemIO
 
             if (listDirectory.SelectedItem != null)
             {
-                dirPath = new DirectoryInfo(listDirectory.SelectedItem.ToString());
-                DirectorySecurity dirSecurity = dirPath.GetAccessControl(AccessControlSections.All);
-                dirPath.SetAccessControl(dirSecurity);
+                dirPath = new DirectoryInfo(listDirectory.SelectedItem.ToString()).ToString();
 
-                files = Directory.GetFiles(dirPath.ToString());
-                dirsF = Directory.GetDirectories(dirPath.ToString());
+                files = Directory.GetFiles(dirPath);
+                dirsF = Directory.GetDirectories(dirPath);
             }
             else
             {

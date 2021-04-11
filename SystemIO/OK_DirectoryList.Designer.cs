@@ -81,7 +81,7 @@ namespace SystemIO
             this.listDrive.Name = "listDrive";
             this.listDrive.Size = new System.Drawing.Size(120, 692);
             this.listDrive.TabIndex = 2;
-            this.listDrive.SelectedIndexChanged += new System.EventHandler(this.listDrive_SelectedIndexChanged);
+            this.listDrive.SelectedIndexChanged += new System.EventHandler(this.ListDrive_SelectedIndexChanged);
             // 
             // listFile
             // 
@@ -102,7 +102,7 @@ namespace SystemIO
             this.listDirectory.Name = "listDirectory";
             this.listDirectory.Size = new System.Drawing.Size(320, 692);
             this.listDirectory.TabIndex = 3;
-            this.listDirectory.SelectedIndexChanged += new System.EventHandler(this.listDirectory_SelectedIndexChanged);
+            this.listDirectory.SelectedIndexChanged += new System.EventHandler(this.ListDirectory_SelectedIndexChanged);
             // 
             // OK_DirectoryList
             // 
