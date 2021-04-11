@@ -58,6 +58,12 @@
     <Compile Include="Onur KIZILDAŞ\OK_DirectoryList.Designer.cs">
       <DependentUpon>OK_DirectoryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Onur KIZILDAŞ\OK_TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Onur KIZILDAŞ\OK_TreeView.Designer.cs">
+      <DependentUpon>OK_TreeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
