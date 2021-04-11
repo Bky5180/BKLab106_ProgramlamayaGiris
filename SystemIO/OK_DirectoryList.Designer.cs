@@ -52,8 +52,8 @@ namespace SystemIO
             this.splitContainer1.Panel1.Controls.Add(this.listDrive);
             this.splitContainer1.Panel1.Controls.Add(this.listFile);
             this.splitContainer1.Panel1.Controls.Add(this.listDirectory);
-            this.splitContainer1.Size = new System.Drawing.Size(1193, 740);
-            this.splitContainer1.SplitterDistance = 736;
+            this.splitContainer1.Size = new System.Drawing.Size(1631, 740);
+            this.splitContainer1.SplitterDistance = 860;
             this.splitContainer1.TabIndex = 3;
             // 
             // lblDirectory
@@ -81,32 +81,34 @@ namespace SystemIO
             this.listDrive.Name = "listDrive";
             this.listDrive.Size = new System.Drawing.Size(120, 692);
             this.listDrive.TabIndex = 2;
-            this.listDrive.Click += new System.EventHandler(this.listDrive_Click);
+            this.listDrive.SelectedIndexChanged += new System.EventHandler(this.listDrive_SelectedIndexChanged);
             // 
             // listFile
             // 
             this.listFile.FormattingEnabled = true;
+            this.listFile.HorizontalScrollbar = true;
             this.listFile.ItemHeight = 16;
-            this.listFile.Location = new System.Drawing.Point(422, 42);
+            this.listFile.Location = new System.Drawing.Point(464, 42);
             this.listFile.Name = "listFile";
-            this.listFile.Size = new System.Drawing.Size(309, 692);
+            this.listFile.Size = new System.Drawing.Size(389, 692);
             this.listFile.TabIndex = 4;
             // 
             // listDirectory
             // 
             this.listDirectory.FormattingEnabled = true;
+            this.listDirectory.HorizontalScrollbar = true;
             this.listDirectory.ItemHeight = 16;
             this.listDirectory.Location = new System.Drawing.Point(138, 42);
             this.listDirectory.Name = "listDirectory";
-            this.listDirectory.Size = new System.Drawing.Size(278, 692);
+            this.listDirectory.Size = new System.Drawing.Size(320, 692);
             this.listDirectory.TabIndex = 3;
-            this.listDirectory.Click += new System.EventHandler(this.listDirectory_Click);
+            this.listDirectory.SelectedIndexChanged += new System.EventHandler(this.listDirectory_SelectedIndexChanged);
             // 
             // OK_DirectoryList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 764);
+            this.ClientSize = new System.Drawing.Size(1655, 764);
             this.Controls.Add(this.splitContainer1);
             this.Name = "OK_DirectoryList";
             this.Text = "OK_DirectoryList";

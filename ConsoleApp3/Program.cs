@@ -25,7 +25,7 @@ namespace TipDonusumleri
             //Console.WriteLine(sayi.ToString());
 
 
-            GenelMetodlar.CarpimTaplosu();
+            //GenelMetodlar.CarpimTaplosu();
            
 
             
