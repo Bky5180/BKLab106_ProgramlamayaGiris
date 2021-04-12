@@ -41,6 +41,8 @@ namespace SystemIO.Onur_KIZILDAŞ
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(776, 861);
             this.treeView1.TabIndex = 0;
+            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
+            this.treeView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.treeView1_MouseMove);
             // 
             // btnYukle
             // 
@@ -52,6 +54,10 @@ namespace SystemIO.Onur_KIZILDAŞ
             this.btnYukle.UseVisualStyleBackColor = true;
             this.btnYukle.Click += new System.EventHandler(this.btnYukle_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.ShowAlways = true;
+            // 
             // OK_TreeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -59,6 +65,7 @@ namespace SystemIO.Onur_KIZILDAŞ
             this.ClientSize = new System.Drawing.Size(800, 935);
             this.Controls.Add(this.btnYukle);
             this.Controls.Add(this.treeView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "OK_TreeView";
             this.Text = "Klasör ve Dosya Listeleme";
             this.ResumeLayout(false);
