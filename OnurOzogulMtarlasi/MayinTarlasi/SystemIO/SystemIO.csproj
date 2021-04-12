@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{129DC31D-2680-421A-A09C-47DA9912EE23}</ProjectGuid>
+    <ProjectGuid>{4CB78FAA-7FB6-4C84-919B-382019290FB7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RuntimeControl</RootNamespace>
-    <AssemblyName>RuntimeControl</AssemblyName>
+    <RootNamespace>SystemIO</RootNamespace>
+    <AssemblyName>SystemIO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,25 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OK_MayinTarlasi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OK_MayinTarlasi.Designer.cs">
-      <DependentUpon>OK_MayinTarlasi.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OK_MayinTarlasi.resx">
-      <DependentUpon>OK_MayinTarlasi.cs</DependentUpon>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

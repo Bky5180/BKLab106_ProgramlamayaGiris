@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemIO.Onur_KIZILDAŞ;
 
-namespace RuntimeControl
+namespace SystemIO
 {
     static class Program
     {
@@ -16,7 +17,7 @@ namespace RuntimeControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OK_MayinTarlasi());
+            Application.Run(new OK_TreeView());
         }
     }
 }

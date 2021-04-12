@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayinTarlasi", "MayinTarlasi\MayinTarlasi.csproj", "{9463D87B-BC41-4C3F-B15B-E13CE9C30666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemIO", "SystemIO\SystemIO.csproj", "{4CB78FAA-7FB6-4C84-919B-382019290FB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9463D87B-BC41-4C3F-B15B-E13CE9C30666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9463D87B-BC41-4C3F-B15B-E13CE9C30666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9463D87B-BC41-4C3F-B15B-E13CE9C30666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9463D87B-BC41-4C3F-B15B-E13CE9C30666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB78FAA-7FB6-4C84-919B-382019290FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB78FAA-7FB6-4C84-919B-382019290FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB78FAA-7FB6-4C84-919B-382019290FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB78FAA-7FB6-4C84-919B-382019290FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C32191FA-027D-4626-86FC-597EB02588BB}
+	EndGlobalSection
+EndGlobal

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{129DC31D-2680-421A-A09C-47DA9912EE23}</ProjectGuid>
+    <ProjectGuid>{F643D1EE-DD2A-40FD-B71D-1D927826CF65}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RuntimeControl</RootNamespace>
-    <AssemblyName>RuntimeControl</AssemblyName>
+    <RootNamespace>SystemIO</RootNamespace>
+    <AssemblyName>SystemIO</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,19 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OK_MayinTarlasi.cs">
+    <Compile Include="OnurKIZILDAS\OK_DirectoryList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OK_MayinTarlasi.Designer.cs">
-      <DependentUpon>OK_MayinTarlasi.cs</DependentUpon>
+    <Compile Include="OnurKIZILDAS\OK_DirectoryList.Designer.cs">
+      <DependentUpon>OK_DirectoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnurKIZILDAS\OK_TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnurKIZILDAS\OK_TreeView.Designer.cs">
+      <DependentUpon>OK_TreeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OK_MayinTarlasi.resx">
-      <DependentUpon>OK_MayinTarlasi.cs</DependentUpon>
+    <EmbeddedResource Include="OnurKIZILDAS\OK_DirectoryList.resx">
+      <DependentUpon>OK_DirectoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnurKIZILDAS\OK_TreeView.resx">
+      <DependentUpon>OK_TreeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

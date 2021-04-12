@@ -10,92 +10,82 @@ using System.Windows.Forms;
 
 namespace RuntimeControl
 {
-    public partial class Form1 : Form
+    public partial class OK_MayinTarlasi : Form
     {
         Random rnd = new Random();
+        PictureBox pcb;
         int[] mayinlar = new int[20];
-        public Form1()
+        int[] pcbes = new int[165];
+        public OK_MayinTarlasi()
         {
             InitializeComponent();
         }
-        
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void OK_MayinTarlasi_Load(object sender, EventArgs e)
         {
-
-            /*
-                toplam 165 adet picturebox var. 
-                20 adet sayi olusturulacak
-                20 ADET sayi random vaziyette 1-165 arasinda olusturulacak
-                Bir dizide tutulacak.
-                
-         
-            */
-
-           
             for (int i = 0; i < mayinlar.Length; i++)
             {
                 int mayin = rnd.Next(1, 166);
                 if (mayinlar.Contains(mayin))
-                {
                     i--;
-                }
                 else
-                {
                     mayinlar[i] = mayin;
-                }
-                
-                
             }
-
-
             for (int i = 0; i < 165; i++)
             {
-                PictureBox pcb = new PictureBox();
-                pcb.Width = 30;
-                pcb.Height = 30;
-                //pcb.Size = new System.Drawing.Size(50, 50);
-                pcb.Margin = new Padding(1); // dış kenar boşluklar
-                pcb.BackColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
-
+                pcb = new PictureBox()
+                {
+                    Width = 30,
+                    Height = 30,
+                    Margin = new Padding(1), // dış kenar boşluklar
+                    BackColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256))
+                    //Size = new System.Drawing.Size(50, 50)
+                };
                 if (mayinlar.Contains(i))
+                {
                     pcb.Tag = true;
+                    pcbes[i] = i + 1;
+                }
                 else
+                {
                     pcb.Tag = false;
-
-
+                    pcbes[i] = i + 1;
+                }
                 //picturebox'a tikladigimizda mayin var ise kullaniciya bildirim gidebilmesi icin click event'i ekliyoruz.
                 pcb.Click += Pcb_Click;
                 flowLayoutPanel1.Controls.Add(pcb);
-
-
             }
         }
-
         private void Pcb_Click(object sender, EventArgs e)
         {
             // sender o an tikladigimiz pictureboz'in tum ozelliklerini bize verir
+            pcb = (PictureBox)sender;
+            //Graphics graph = pcb.CreateGraphics();
 
-            PictureBox pcb =(PictureBox)sender;
-            Color color = pcb.BackColor;
+            int sayac = 0;
             if ((bool)pcb.Tag == true)
             {
                 timer1.Stop();
-
                 foreach (var item in flowLayoutPanel1.Controls)
                 {
+                    sayac++;
                     pcb = (PictureBox)item;
-                    pcb.BackColor = color;
+
+                    if (!mayinlar.Contains(pcbes[sayac - 1]))
+                        pcb.BackColor = Color.White;
+                    else
+                    {
+                        pcb.BackColor = Color.Red;
+                        //graph.DrawString(pcbes[sayac - 1].ToString(), DefaultFont, Brushes.Black, new PointF(pcb.Location.X, pcb.Location.Y));
+                    }
                 }
-                MessageBox.Show("Mayin:" );
             }
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             foreach (var item in flowLayoutPanel1.Controls)
             {
-                PictureBox pcb = (PictureBox)item;
-
+                pcb = (PictureBox)item;
                 pcb.BackColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
             }
         }
