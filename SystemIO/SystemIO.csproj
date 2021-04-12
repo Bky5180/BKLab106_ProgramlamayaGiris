@@ -52,10 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnurKIZILDAS\OK_DirectoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnurKIZILDAS\OK_DirectoryList.Designer.cs">
+      <DependentUpon>OK_DirectoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnurKIZILDAS\OK_TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnurKIZILDAS\OK_TreeView.Designer.cs">
+      <DependentUpon>OK_TreeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnurKIZILDAS\OK_DirectoryList.resx">
+      <DependentUpon>OK_DirectoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnurKIZILDAS\OK_TreeView.resx">
+      <DependentUpon>OK_TreeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
