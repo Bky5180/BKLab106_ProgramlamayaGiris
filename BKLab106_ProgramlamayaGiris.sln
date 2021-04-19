@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeControl", "RuntimeCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemIO", "SystemIO\SystemIO.csproj", "{F643D1EE-DD2A-40FD-B71D-1D927826CF65}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cigkofteci", "Batuhan_Cigkofteci\Cigkofteci\Cigkofteci.csproj", "{65A3FFF0-467B-43C9-9863-1CBC00D9AC11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "proje", "Batuhan_Fifa21_Overall\proje\proje.csproj", "{BE3C548F-843F-4161-BA5D-B55FF441C73B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F643D1EE-DD2A-40FD-B71D-1D927826CF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A3FFF0-467B-43C9-9863-1CBC00D9AC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A3FFF0-467B-43C9-9863-1CBC00D9AC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A3FFF0-467B-43C9-9863-1CBC00D9AC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A3FFF0-467B-43C9-9863-1CBC00D9AC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
