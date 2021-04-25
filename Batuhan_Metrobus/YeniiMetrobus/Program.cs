@@ -500,18 +500,13 @@ namespace YeniiMetrobus
                                 }
 
                             } while (true);
-
-
-                            /* if (paraust == "1" || paraust == "2")
-                             {
-                                 paraust = null;
-                                 break;
-                             } */
+                         
                             if (yolcu.denetle != "y")
                             {
                                 yolcu.denetle = null;
                                 break;
                             }
+                            
                         } while (true);
                     }
                     else if (menu == "6")
