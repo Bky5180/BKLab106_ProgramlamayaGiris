@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cigkofteci", "Batuhan_Cigko
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "proje", "Batuhan_Fifa21_Overall\proje\proje.csproj", "{BE3C548F-843F-4161-BA5D-B55FF441C73B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YeniiMetrobus", "Batuhan_Metrobus\YeniiMetrobus\YeniiMetrobus.csproj", "{5FE17E5F-FE80-4B5C-8AFA-8F66BAB0518C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE3C548F-843F-4161-BA5D-B55FF441C73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE17E5F-FE80-4B5C-8AFA-8F66BAB0518C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE17E5F-FE80-4B5C-8AFA-8F66BAB0518C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE17E5F-FE80-4B5C-8AFA-8F66BAB0518C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE17E5F-FE80-4B5C-8AFA-8F66BAB0518C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
